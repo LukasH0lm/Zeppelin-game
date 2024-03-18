@@ -1,0 +1,58 @@
+[gd_scene load_steps=12 format=3 uid="uid://dvbgf6drv86br"]
+
+[ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
+[ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
+[ext_resource type="Texture2D" uid="uid://bfmbndv1sge56" path="res://data/sky.exr" id="3_5hgqm"]
+[ext_resource type="PackedScene" uid="uid://qumac0c5p0tv" path="res://data/models/Toska/Toska.dae" id="4_japnf"]
+[ext_resource type="Texture2D" uid="uid://r1gcyfi2x53t" path="res://data/models/Toska/concrete_floor_worn_001_disp_4k.png" id="5_ido5m"]
+[ext_resource type="PackedScene" uid="uid://cf4xy8wvx8q3o" path="res://data/models/L 17/L 17.dae" id="6_3tmoc"]
+[ext_resource type="PackedScene" uid="uid://c30wkrnyuiif4" path="res://data/models/L 30/L 30.dae" id="7_dlo6k"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
+panorama = ExtResource("3_5hgqm")
+
+[sub_resource type="Sky" id="Sky_cvyow"]
+sky_material = SubResource("PanoramaSkyMaterial_6bxyf")
+
+[sub_resource type="Environment" id="Environment_xj5u1"]
+background_mode = 2
+sky = SubResource("Sky_cvyow")
+ssao_enabled = true
+fog_light_energy = 0.1
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.02
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plarn"]
+albedo_texture = ExtResource("5_ido5m")
+
+[node name="world" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43662, -0.185922, -1.80975)
+script = ExtResource("1_x87ln")
+
+[node name="player" parent="." instance=ExtResource("1_tnv5a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.314, 13.682, 82.8561)
+
+[node name="environment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_xj5u1")
+
+[node name="sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.933167, 0.309879, -0.182139, 0, 0.506726, 0.862107, 0.359443, -0.80449, 0.47286, 0, 0, 0)
+shadow_enabled = true
+
+[node name="geometry" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.71746, 36.6815, -21.3458)
+
+[node name="Toska" parent="." instance=ExtResource("4_japnf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.5778, 20.8325, -44.3501)
+
+[node name="Floor" type="CSGBox3D" parent="Toska"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1157, -11.3975, 6.47256)
+use_collision = true
+size = Vector3(73, 1, 242)
+material = SubResource("StandardMaterial3D_plarn")
+
+[node name="L 17" parent="Toska" instance=ExtResource("6_3tmoc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.5, -16.9445, 21.7674)
+
+[node name="L 30" parent="." instance=ExtResource("7_dlo6k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2953, 5.86733, -36.347)
