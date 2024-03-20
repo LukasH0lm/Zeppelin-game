@@ -26,24 +26,23 @@ volumetric_fog_density = 0.02
 albedo_texture = ExtResource("5_ido5m")
 
 [node name="world" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.43662, -0.185922, -1.80975)
 script = ExtResource("1_x87ln")
 
 [node name="player" parent="." instance=ExtResource("1_tnv5a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.314, 13.682, 82.8561)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.686001, 2.87994, 79.8561)
 
 [node name="environment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_xj5u1")
 
 [node name="sun" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.933167, 0.309879, -0.182139, 0, 0.506726, 0.862107, 0.359443, -0.80449, 0.47286, 0, 0, 0)
+transform = Transform3D(0.933167, 0.309878, -0.182139, 0, 0.506726, 0.862107, 0.359443, -0.80449, 0.47286, -18, -8.80206, -3)
 shadow_enabled = true
 
 [node name="geometry" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.71746, 36.6815, -21.3458)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7175, 27.8794, -24.3458)
 
 [node name="Toska" parent="." instance=ExtResource("4_japnf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.5778, 20.8325, -44.3501)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5778, 12.0304, -47.3501)
 
 [node name="Floor" type="CSGBox3D" parent="Toska"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1157, -11.3975, 6.47256)
@@ -55,4 +54,4 @@ material = SubResource("StandardMaterial3D_plarn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.5, -16.9445, 21.7674)
 
 [node name="L 30" parent="." instance=ExtResource("7_dlo6k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.2953, 5.86733, -36.347)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2953, -2.93473, -39.347)
