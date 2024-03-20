@@ -1,6 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cwiu8nsyij4gn"]
+[gd_scene load_steps=12 format=3 uid="uid://cwiu8nsyij4gn"]
 
 [ext_resource type="Script" path="res://data/player/player.gd" id="1_u1w3t"]
+[ext_resource type="Shader" path="res://assets/Shader/DitheringShaders/dithering.gdshader" id="2_y86i1"]
+[ext_resource type="Texture2D" uid="uid://c1elnscsapnve" path="res://assets/Shader/DitheringShaders/palette_eeve.png" id="3_kdoat"]
+[ext_resource type="Texture2D" uid="uid://b6onntngscj2v" path="res://assets/Shader/DitheringShaders/bayer2tile16.png" id="4_api31"]
 
 [sub_resource type="Animation" id="Animation_saxjg"]
 resource_name = "head_bob"
@@ -30,6 +33,15 @@ _data = {
 "reset": SubResource("Animation_1m4wq")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_afjac"]
+shader = ExtResource("2_y86i1")
+shader_parameter/u_bit_depth = 32
+shader_parameter/u_contrast = 1.0
+shader_parameter/u_offset = null
+shader_parameter/u_dither_size = 2
+shader_parameter/u_dither_tex = ExtResource("4_api31")
+shader_parameter/u_color_tex = ExtResource("3_kdoat")
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_phygr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3iwsb"]
@@ -50,6 +62,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 libraries = {
 "": SubResource("AnimationLibrary_36ogt")
 }
+
+[node name="CanvasLayer" type="CanvasLayer" parent="head/camera"]
+
+[node name="ColorRect" type="ColorRect" parent="head/camera/CanvasLayer"]
+material = SubResource("ShaderMaterial_afjac")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="collision" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_phygr")
