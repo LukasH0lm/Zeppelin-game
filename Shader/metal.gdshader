@@ -1,7 +1,7 @@
 shader_type spatial;
 render_mode specular_schlick_ggx;
 
-uniform vec4 ColorUniform;
+uniform vec4 ColorUniform : source_color;
 uniform float HowShiny = 0.2;
 uniform float Roughness = 0.6;
 

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj7wxdpwxvnw"]
+
+[ext_resource type="PackedScene" uid="uid://qumac0c5p0tv" path="res://data/models/Toska/Toska.dae" id="1_tm0cx"]
+
+[node name="Toska" instance=ExtResource("1_tm0cx")]
