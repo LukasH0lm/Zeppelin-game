@@ -1,0 +1,11 @@
+Model Information:
+* title:	Prussian Infantry - Franco-Prussian war
+* source:	https://sketchfab.com/3d-models/prussian-infantry-franco-prussian-war-6508a2c8ae074b9489fe1d7ef2566384
+* author:	Andy woodhead (https://sketchfab.com/Andywoodhead)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Prussian Infantry - Franco-Prussian war" (https://sketchfab.com/3d-models/prussian-infantry-franco-prussian-war-6508a2c8ae074b9489fe1d7ef2566384) by Andy woodhead (https://sketchfab.com/Andywoodhead) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

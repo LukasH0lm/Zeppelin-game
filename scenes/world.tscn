@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=20 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -10,8 +10,9 @@
 [ext_resource type="Terrain3DStorage" uid="uid://dcith6gxtbli4" path="res://scenes/Terrain3d/new_terrain_3d_storage.res" id="8_u4l84"]
 [ext_resource type="Terrain3DMaterial" uid="uid://bnyk1ndo145gh" path="res://scenes/Terrain3d/new_terrain_3d_material.tres" id="9_0m7xv"]
 [ext_resource type="Terrain3DTextureList" uid="uid://cwrj8yhskniyw" path="res://scenes/Terrain3d/new_terrain_3d_texture_list.tres" id="10_ufmkn"]
-[ext_resource type="PackedScene" uid="uid://bwbmux46a73ha" path="res://assets/models/Tr_Sec_1.dae" id="11_8rntj"]
+[ext_resource type="PackedScene" uid="uid://bwbmux46a73ha" path="res://assets/models/trainTracks/Tr_Sec_1.dae" id="11_8rntj"]
 [ext_resource type="ArrayMesh" uid="uid://ct05ptdin3spt" path="res://assets/models/ger_barracks2.obj" id="12_j83cm"]
+[ext_resource type="PackedScene" uid="uid://c4hl2qs51530b" path="res://scenes/soldier.tscn" id="13_pkys3"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -30,11 +31,16 @@ volumetric_fog_density = 0.02
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plarn"]
 albedo_texture = ExtResource("5_ido5m")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_e0mah"]
+size = Vector3(1.35992, 1.86157, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rgcm3"]
+
 [node name="world" type="Node3D"]
 script = ExtResource("1_x87ln")
 
 [node name="player" parent="." instance=ExtResource("1_tnv5a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -624.538, 2.87994, 79.8561)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600.409, 2.87994, 86.3984)
 
 [node name="environment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_xj5u1")
@@ -135,3 +141,22 @@ mesh = ExtResource("12_j83cm")
 [node name="GerBarracks4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -633.441, 0, 16.4464)
 mesh = ExtResource("12_j83cm")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -610.003, 1.05485, 82.4837)
+
+[node name="Soldier" parent="CharacterBody3D" instance=ExtResource("13_pkys3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="TalkArea" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, -609.944, 1.0084, 83.1592)
+shape = SubResource("BoxShape3D_rgcm3")
+
+[connection signal="body_entered" from="Area3D" to="player" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="player" method="_on_area_3d_body_exited"]

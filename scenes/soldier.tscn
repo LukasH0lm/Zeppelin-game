@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4hl2qs51530b"]
+
+[ext_resource type="PackedScene" uid="uid://h6h8lcwuv8t8" path="res://assets/models/prussian_infantry_-_franco-prussian_war/scene.gltf" id="1_bhmg2"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_bhmg2")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)

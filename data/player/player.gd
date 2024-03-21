@@ -20,6 +20,8 @@ var crouch_player_y_scale: float = 0.75
 var target_height: float = 1.8  # Desired height in meters
 var original_height: float = 1.0  # Original height in meters, assuming the default height is 1.0
 
+var on_soldier = false
+
 # Node References
 @onready var parts: Dictionary = {
 	"head": $head,
@@ -47,6 +49,12 @@ func _physics_process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		handle_mouse_movement(event)
+	
+	if event is InputEventMouseButton:
+		if on_soldier:
+			DialogueManager.show_dialogue_balloon(load("res://dialogue/HelloWorld.dialogue"))
+			on_soldier = false
+	
 
 # Movement Logic
 func handle_movement_input(delta: float) -> void:
@@ -119,3 +127,12 @@ func set_player_height(height: float) -> void:
 	var scale_factor = height / original_height
 	parts["body"].scale.y *= scale_factor
 	parts["collision"].scale.y *= scale_factor
+
+
+
+func _on_area_3d_body_entered(body):
+	on_soldier = true
+
+
+func _on_area_3d_body_exited(body):
+	on_soldier = false

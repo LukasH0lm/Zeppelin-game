@@ -1,0 +1,40 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dvn4eilrie7bo"
+path="res://.godot/imported/Tr_Sec_2.dae-4b7a64144bb5b0b1e6a8e69e886dd4ed.scn"
+
+[deps]
+
+source_file="res://assets/models/trainTracks/Tr_Sec_2.dae"
+dest_files=["res://.godot/imported/Tr_Sec_2.dae-4b7a64144bb5b0b1e6a8e69e886dd4ed.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:Camera": {
+"import/skip_import": true
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1
