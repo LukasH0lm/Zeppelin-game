@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cwiu8nsyij4gn"]
+[gd_scene load_steps=13 format=3 uid="uid://cwiu8nsyij4gn"]
 
 [ext_resource type="Script" path="res://data/player/player.gd" id="1_u1w3t"]
 [ext_resource type="Shader" path="res://assets/Shader/DitheringShaders/dithering.gdshader" id="2_y86i1"]
@@ -33,6 +33,9 @@ _data = {
 "reset": SubResource("Animation_1m4wq")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_os30m"]
+font_size = 30
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_afjac"]
 shader = ExtResource("2_y86i1")
 shader_parameter/u_bit_depth = 32
@@ -65,7 +68,15 @@ libraries = {
 
 [node name="CanvasLayer" type="CanvasLayer" parent="head/camera"]
 
-[node name="ColorRect" type="ColorRect" parent="head/camera/CanvasLayer"]
+[node name="ui_test" type="Label" parent="head/camera/CanvasLayer"]
+visible = false
+z_index = 1
+offset_right = 183.0
+offset_bottom = 149.0
+text = "Test"
+label_settings = SubResource("LabelSettings_os30m")
+
+[node name="Shader" type="ColorRect" parent="head/camera/CanvasLayer"]
 material = SubResource("ShaderMaterial_afjac")
 anchors_preset = 15
 anchor_right = 1.0

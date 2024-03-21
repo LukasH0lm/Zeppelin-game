@@ -20,7 +20,9 @@ var crouch_player_y_scale: float = 0.75
 var target_height: float = 1.8  # Desired height in meters
 var original_height: float = 1.0  # Original height in meters, assuming the default height is 1.0
 
-var on_soldier = false
+
+# Define raycast length
+const RAY_LENGTH = 100
 
 # Node References
 @onready var parts: Dictionary = {
@@ -41,6 +43,8 @@ func _process(delta: float) -> void:
 	handle_movement_input(delta)
 	update_camera(delta)
 
+	
+
 func _physics_process(delta: float) -> void:
 	apply_gravity(delta)
 	handle_jump()
@@ -49,11 +53,10 @@ func _physics_process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		handle_mouse_movement(event)
+	if event is InputEventMouseButton and event.is_pressed():
+		
+		check_if_looking_at_npc()
 	
-	if event is InputEventMouseButton:
-		if on_soldier:
-			DialogueManager.show_dialogue_balloon(load("res://dialogue/HelloWorld.dialogue"))
-			on_soldier = false
 	
 
 # Movement Logic
@@ -128,11 +131,39 @@ func set_player_height(height: float) -> void:
 	parts["body"].scale.y *= scale_factor
 	parts["collision"].scale.y *= scale_factor
 
+var times_checked = 0
+
+func check_if_looking_at_npc():
+	
+	print("checking for npc " + str(times_checked))
+	
+	times_checked = times_checked + 1
+	
+	
+	var space_state = get_world_3d().direct_space_state
+	var cam = $head/camera
+	var mousepos = get_viewport().get_mouse_position()
+
+	var origin = cam.project_ray_origin(mousepos)
+	var end = origin + cam.project_ray_normal(mousepos) * RAY_LENGTH
+	var query = PhysicsRayQueryParameters3D.create(origin, end)
+	query.collide_with_areas = true
+
+	var result = space_state.intersect_ray(query)
+
+	#print(result)
+
+	if result:
+
+		print("got result" )
+
+		var collider = result["collider"]
+		print("found collider: " + collider.name)
+		if collider.is_in_group("npcs"):
+			print("collider is an npc")
+			var npc = collider
+			# Open dialogue tree with this NPC
+			var dialogue = "res://" + "HelloWorld" + ".dialogue"
+			DialogueManager.show_example_dialogue_balloon(load("res://dialogue/HelloWorld.dialogue"))
 
 
-func _on_area_3d_body_entered(body):
-	on_soldier = true
-
-
-func _on_area_3d_body_exited(body):
-	on_soldier = false
