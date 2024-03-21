@@ -163,7 +163,10 @@ func check_if_looking_at_npc():
 			print("collider is an npc")
 			var npc = collider
 			# Open dialogue tree with this NPC
-
-			DialogueManager.show_example_dialogue_balloon(load("res://dialogue/" + collider.name + ".dialogue"))
+			var filepath = "res://dialogue/" + collider.name + ".dialogue"
+			var dialogue_file = load(filepath)
+			
+			if dialogue_file:
+				DialogueManager.show_example_dialogue_balloon(dialogue_file)
 
 
