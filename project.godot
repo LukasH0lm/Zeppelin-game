@@ -23,6 +23,10 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 enabled=PackedStringArray("res://addons/AutoMat/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 game_pause={
