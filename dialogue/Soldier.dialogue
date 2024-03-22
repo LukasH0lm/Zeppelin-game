@@ -1,13 +1,13 @@
 ~ this_is_a_node_title
 
-Nathan: [[Hi|Hello|Howdy]], I am a soldier.
-Nathan: pick a number.
-- 1
-	Nathan: You picked the first one.
-- 2
-	Nathan: You picked the second one.
-- Start again => this_is_a_node_title
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Soldat: [[Hej|Hejsa|Hvad så?]], Jeg er en soldat.
+Soldat: Er du en soldat?
+- ja
+	Soldat: Sejt nok
+- nej
+	Soldat: Ikke sejt nok
+- Hej => this_is_a_node_title
+- Farvel => END
+Soldat: Vi ses bro
 
 => END

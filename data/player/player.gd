@@ -40,22 +40,26 @@ func _ready() -> void:
 	parts["camera"].current = true
 
 func _process(delta: float) -> void:
-	handle_movement_input(delta)
-	update_camera(delta)
+	
+	if !Global.is_in_dialogue:
+	
+		handle_movement_input(delta)
+		update_camera(delta)
 
 	
 
 func _physics_process(delta: float) -> void:
 	apply_gravity(delta)
-	handle_jump()
-	move_character(delta)
+	if !Global.is_in_dialogue:
+		handle_jump()
+		move_character(delta)
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		handle_mouse_movement(event)
-	if event is InputEventMouseButton and event.is_pressed():
-		
-		check_if_looking_at_npc()
+	if !Global.is_in_dialogue:
+		if event is InputEventMouseMotion:
+			handle_mouse_movement(event)
+		if event is InputEventMouseButton and event.is_pressed():
+			check_if_looking_at_npc()
 	
 	
 
@@ -135,6 +139,8 @@ var times_checked = 0
 
 func check_if_looking_at_npc():
 	
+	
+	
 	print("checking for npc " + str(times_checked))
 	
 	times_checked = times_checked + 1
@@ -163,10 +169,15 @@ func check_if_looking_at_npc():
 			print("collider is an npc")
 			var npc = collider
 			# Open dialogue tree with this NPC
-			var filepath = "res://dialogue/" + collider.name + ".dialogue"
-			var dialogue_file = load(filepath)
+			var dialogue_filepath = "res://dialogue/" + collider.name + ".dialogue"
+			var dialogue_file = load(dialogue_filepath)
+			
+			var baloon_filepath = "res://dialogue/balloon.tscn"
+			var baloon_file = load(baloon_filepath)
 			
 			if dialogue_file:
-				DialogueManager.show_example_dialogue_balloon(dialogue_file)
+				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+				DialogueManager.show_dialogue_balloon_scene(baloon_file, dialogue_file)
+				
 
 
