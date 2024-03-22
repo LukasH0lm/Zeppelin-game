@@ -22,7 +22,7 @@ var original_height: float = 1.0  # Original height in meters, assuming the defa
 
 
 # Define raycast length
-const RAY_LENGTH = 100
+const RAY_LENGTH = 1
 
 # Node References
 @onready var parts: Dictionary = {
