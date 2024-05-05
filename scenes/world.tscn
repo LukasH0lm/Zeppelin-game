@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=26 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -14,8 +14,12 @@
 [ext_resource type="ArrayMesh" uid="uid://ct05ptdin3spt" path="res://assets/models/ger_barracks2.obj" id="12_j83cm"]
 [ext_resource type="Script" path="res://scenes/CharacterBody3D.gd" id="13_kqvng"]
 [ext_resource type="PackedScene" uid="uid://c4hl2qs51530b" path="res://scenes/soldier.tscn" id="13_pkys3"]
+[ext_resource type="PackedScene" uid="uid://hp3ev38jowk2" path="res://worker_7.glb" id="15_71iwp"]
+[ext_resource type="PackedScene" uid="uid://10qyv1jogmmu" path="res://assets/models/volkssturmmann_low_poly.glb" id="15_iwwjq"]
 [ext_resource type="PackedScene" uid="uid://bsboeour6agq6" path="res://data/models/Tobias/Tobias.dae" id="15_qj725"]
+[ext_resource type="PackedScene" uid="uid://cl7fhtj3gm1p4" path="res://assets/models/german_ss_soldier_high_quality_free_download.glb" id="16_8qe0c"]
 [ext_resource type="PackedScene" uid="uid://deqq5jo27skgy" path="res://data/models/Toni/Toni.dae" id="16_n10w2"]
+[ext_resource type="PackedScene" uid="uid://cwb48q3nypcy2" path="res://assets/models/pilot_3.glb" id="17_lr8lm"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -35,7 +39,7 @@ volumetric_fog_density = 0.02
 albedo_texture = ExtResource("5_ido5m")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e0mah"]
-size = Vector3(1.35992, 1.86157, 1)
+size = Vector3(1.21335, 2.43878, 0.605381)
 
 [node name="world" type="Node3D"]
 script = ExtResource("1_x87ln")
@@ -114,7 +118,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -633.4
 mesh = ExtResource("12_j83cm")
 
 [node name="Soldier" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -468.707, 1.05485, 82.4837)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -466.174, 0.888385, 82.5917)
 script = ExtResource("13_kqvng")
 
 [node name="SoldierModel" parent="Soldier" instance=ExtResource("13_pkys3")]
@@ -123,6 +127,50 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
+
+[node name="Worker" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.0100117, 0, 0, 0, 0.0100117, 0, 0, 0, 0.0100117, -463.427, 0.919843, 82.7381)
+script = ExtResource("13_kqvng")
+
+[node name="WorkerModel" parent="Worker" instance=ExtResource("15_71iwp")]
+transform = Transform3D(86.1867, 0, 0, 0, 126.066, 0, 0, 0, 96.2676, 192.32, -92.762, 29.6963)
+
+[node name="CollisionShape3DWorker" type="CollisionShape3D" parent="Worker"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 189.68, 17.8194, 28.1592)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="OldSoldier" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -472.805, 1.2679, 82.7422)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="OldSoldier"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 15.4609, 2.98972, -4.37793)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="OldSoldierModel" parent="OldSoldier" instance=ExtResource("15_iwwjq")]
+transform = Transform3D(22.5538, 0, 0, 0, 20.681, 0, 0, 0, 24.6555, 23.2695, -120.346, 3.1416)
+
+[node name="CamoSoldier" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.0120152, 0, 0, 0, 0.0120152, 0, 0, 0, 0.0120152, -475.926, 1.49036, 82.8608)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CamoSoldier"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -14.6992, -42.2743, -3.64014)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="CamoSoldierModel" parent="CamoSoldier" instance=ExtResource("16_8qe0c")]
+transform = Transform3D(137.717, 0, 0, 0, 76.1085, 0, 0, 0, 142.761, -14.4492, -107.573, -6.3252)
+
+[node name="PilotSoldier" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.301, 1.12083, 82.5436)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PilotSoldier"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 164.984, 2.49441, 0)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="PilotSoldierModel" parent="PilotSoldier" instance=ExtResource("17_lr8lm")]
+transform = Transform3D(1.45454, -0.0417424, 0.00177126, 0.0398921, 1.522, -0.0645831, 0, 0.10225, 0.962045, 165.078, -124.646, 7.27441)
 
 [node name="Tobias" parent="." instance=ExtResource("15_qj725")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -511.825, 6.9955, -14.6663)
