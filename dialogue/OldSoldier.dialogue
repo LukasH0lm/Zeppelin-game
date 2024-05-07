@@ -1,13 +1,12 @@
 ~ this_is_a_node_title
 
-Soldat: [[Hej|Hejsa|Hvad så?]], Jeg er en soldat.
-Soldat: Er du en soldat?
-- ja
-	Soldat: Sejt nok
-- nej
-	Soldat: Ikke sejt nok
-- Hej => this_is_a_node_title
+OldSoldat: [[stop!|Holdt!]], Du må være ham den nye soldat jeg har hørt om
+OldSoldat: håber du har en god første dag på zepplinbasen
+- Hvad er det for en hangar du står ved?
+	Soldat: Denne hangar hedder Tobias, her kan vores store zeppeliner stå i læg når de ikke er ude og flyve 
+- Har du set nogle billeder liggende rundt på her på basen?
+	OldSoldat: Jeg syntes at jeg så et billede flyve ind i hangaren tidliger
+	OldSoldat: Ellers kan du spørger ham piloten vi har på basen, han er elsker at tage billeder. 
 - Farvel => END
-Soldat: Vi ses bro
 
 => END

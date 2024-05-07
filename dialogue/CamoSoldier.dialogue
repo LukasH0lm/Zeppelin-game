@@ -1,0 +1,12 @@
+~ this_is_a_node_title
+
+CamoSoldat: Hallo.
+- Hallo => this_is_a_node_title
+	CamoSoldat: Hallo
+- Har du set nogle billedere liggende rundt omkring?
+	CamoSoldat: Ich spreche kein dänisch
+
+- Farvel
+	CamoSoldat: Auf Wiedersehen
+
+=> END
