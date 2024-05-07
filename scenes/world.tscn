@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=27 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://r1gcyfi2x53t" path="res://data/models/Toska/concrete_floor_worn_001_disp_4k.png" id="5_ido5m"]
 [ext_resource type="PackedScene" uid="uid://cf4xy8wvx8q3o" path="res://data/models/L 17/L 17.dae" id="6_3tmoc"]
 [ext_resource type="PackedScene" uid="uid://c30wkrnyuiif4" path="res://data/models/L 30/L 30.dae" id="7_dlo6k"]
+[ext_resource type="PackedScene" uid="uid://bpgt0m61yx13v" path="res://data/models/L 54/L 54.dae" id="7_h4opb"]
 [ext_resource type="Terrain3DStorage" uid="uid://dcith6gxtbli4" path="res://scenes/Terrain3d/new_terrain_3d_storage.res" id="8_u4l84"]
 [ext_resource type="Terrain3DMaterial" uid="uid://bnyk1ndo145gh" path="res://scenes/Terrain3d/new_terrain_3d_material.tres" id="9_0m7xv"]
 [ext_resource type="Terrain3DTextureList" uid="uid://cwrj8yhskniyw" path="res://scenes/Terrain3d/new_terrain_3d_texture_list.tres" id="10_ufmkn"]
@@ -14,8 +15,11 @@
 [ext_resource type="ArrayMesh" uid="uid://ct05ptdin3spt" path="res://assets/models/ger_barracks2.obj" id="12_j83cm"]
 [ext_resource type="Script" path="res://scenes/CharacterBody3D.gd" id="13_kqvng"]
 [ext_resource type="PackedScene" uid="uid://c4hl2qs51530b" path="res://scenes/soldier.tscn" id="13_pkys3"]
+[ext_resource type="PackedScene" uid="uid://bf6x8x2kpmkpf" path="res://data/models/L 22/L 22.dae" id="15_pki2o"]
 [ext_resource type="PackedScene" uid="uid://bsboeour6agq6" path="res://data/models/Tobias/Tobias.dae" id="15_qj725"]
 [ext_resource type="PackedScene" uid="uid://deqq5jo27skgy" path="res://data/models/Toni/Toni.dae" id="16_n10w2"]
+[ext_resource type="PackedScene" uid="uid://cyhxw28hj6ord" path="res://data/models/FlyHangar/Midlertidig_FlyHangar.dae" id="18_ofge4"]
+[ext_resource type="PackedScene" uid="uid://ca7ejajo3l4qx" path="res://data/models/Albatros D III/albatros.dae" id="20_0o7ic"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -34,6 +38,33 @@ volumetric_fog_density = 0.02
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plarn"]
 albedo_texture = ExtResource("5_ido5m")
 
+[sub_resource type="FontFile" id="FontFile_kfhs5"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/32/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/32/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/32/0/glyphs/0/size = Vector2(0, 0)
+cache/0/32/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/32/0/glyphs/0/texture_idx = -1
+cache/0/32/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/32/0/kerning_overrides/32/12 = Vector2(0, 0)
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/32/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/32/12 = Vector2(0, 0)
+cache/0/32/12/glyphs/0/offset = Vector2(0, 0)
+cache/0/32/12/glyphs/0/size = Vector2(0, 0)
+cache/0/32/12/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/32/12/glyphs/0/texture_idx = -1
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_e0mah"]
 size = Vector3(1.35992, 1.86157, 1)
 
@@ -41,7 +72,7 @@ size = Vector3(1.35992, 1.86157, 1)
 script = ExtResource("1_x87ln")
 
 [node name="player" parent="." instance=ExtResource("1_tnv5a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -452.646, 1.00703, 86.3984)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -463.482, 1.00703, 86.3984)
 
 [node name="environment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_xj5u1")
@@ -53,9 +84,6 @@ shadow_enabled = true
 [node name="geometry" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7175, 27.8794, -24.3458)
 
-[node name="LeBigBoy" parent="." instance=ExtResource("6_3tmoc")]
-transform = Transform3D(-1.17417, 0, -0.933444, 0, 1.5, 0, 0.933444, 0, -1.17417, -23.4361, -6.00338, 265.42)
-
 [node name="Toska" parent="." instance=ExtResource("4_japnf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5778, 11.0304, -47.3501)
 
@@ -65,11 +93,63 @@ use_collision = true
 size = Vector3(73, 1, 242)
 material = SubResource("StandardMaterial3D_plarn")
 
-[node name="L 17" parent="Toska" instance=ExtResource("6_3tmoc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.5, -16.9445, 21.7674)
-
 [node name="L 30" parent="Toska" instance=ExtResource("7_dlo6k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.2825, -14.9651, 8.0031)
+transform = Transform3D(-0.984808, 0, -0.173648, 0, 1, 0, 0.173648, 0, -0.984808, 25.0907, -16.0792, 337.291)
+
+[node name="Label3D" type="Label3D" parent="Toska/L 30"]
+transform = Transform3D(-1.19209e-07, 0, 3, 0, 3, 0, -3, 0, -1.19209e-07, 10.7479, 17.437, 13.9339)
+pixel_size = 0.1
+text = "L  30
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="Label3D2" type="Label3D" parent="Toska/L 30"]
+transform = Transform3D(-1.19209e-07, 4.65661e-10, -3, -0.00523598, 3, 0, 3, 0.00523598, -5.96046e-08, -11.2598, 17.9314, 9.60062)
+pixel_size = 0.1
+text = "L  30
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="Label3D" type="Label3D" parent="Toska"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28.6532, 21.9963, 127.38)
+pixel_size = 0.1
+text = "Toska
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="L 54" parent="Toska" instance=ExtResource("7_h4opb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.6995, -13.9905, 11.848)
+
+[node name="Label3D" type="Label3D" parent="Toska/L 54"]
+transform = Transform3D(-1.19209e-07, 0, 3, 0, 3, 0, -3, 0, -1.19209e-07, 10.8172, 18.3388, 13.9339)
+pixel_size = 0.1
+text = "L  54
+
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="Label3D2" type="Label3D" parent="Toska/L 54"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -10.8507, 18.3388, 13.9116)
+pixel_size = 0.1
+text = "L  54
+
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
 
 [node name="TrainTracks" type="Node3D" parent="."]
 transform = Transform3D(0.994703, 0, -0.102793, 0, 1, 0, 0.102793, 0, 0.994703, -61, 0, 63)
@@ -96,22 +176,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -496.881)
 storage = ExtResource("8_u4l84")
 material = ExtResource("9_0m7xv")
 texture_list = ExtResource("10_ufmkn")
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
 [node name="FotoPerspektiv" type="Camera3D" parent="."]
 transform = Transform3D(0.880014, 0.0768489, -0.468689, 0.0799584, 0.948766, 0.305696, 0.468168, -0.306492, 0.828783, -593.605, 174.597, 373.097)
 fov = 49.9282
-
-[node name="GerBarracks2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -633.441, 0, 66.9074)
-mesh = ExtResource("12_j83cm")
-
-[node name="GerBarracks3" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -633.441, 0, 40.7939)
-mesh = ExtResource("12_j83cm")
-
-[node name="GerBarracks4" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -633.441, 0, 16.4464)
-mesh = ExtResource("12_j83cm")
 
 [node name="Soldier" type="CharacterBody3D" parent="." groups=["npcs"]]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -468.707, 1.05485, 82.4837)
@@ -133,6 +202,39 @@ use_collision = true
 size = Vector3(40, 1, 180)
 material = SubResource("StandardMaterial3D_plarn")
 
+[node name="Label3D" type="Label3D" parent="Tobias"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -28.9567, 17.5215, 96.3858)
+pixel_size = 0.1
+text = "Tobias
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="L 22" parent="Tobias" instance=ExtResource("15_pki2o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.4742, -14.9586, 7.85668)
+
+[node name="Label3D" type="Label3D" parent="Tobias/L 22"]
+transform = Transform3D(-1.19209e-07, 0, 3, 0, 3, 0, -3, 0, -1.19209e-07, 8.43726, 18.5466, 13.9339)
+pixel_size = 0.1
+text = "L  22
+
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="Label3D2" type="Label3D" parent="Tobias/L 22"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -8.4408, 18.5466, 13.9339)
+pixel_size = 0.1
+text = "L  22
+
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
 [node name="Toni" parent="." instance=ExtResource("16_n10w2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -422.997, 6.995, -14.666)
 
@@ -141,3 +243,81 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1157, -7.48651, 6.41227)
 use_collision = true
 size = Vector3(40, 1, 180)
 material = SubResource("StandardMaterial3D_plarn")
+
+[node name="Label3D" type="Label3D" parent="Toni"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -28.9567, 17.5215, 96.3378)
+pixel_size = 0.1
+text = "Toni
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="L 17" parent="Toni" instance=ExtResource("6_3tmoc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8141, -15.1502, 5.32418)
+
+[node name="Label3D" type="Label3D" parent="Toni/L 17"]
+transform = Transform3D(-1.19209e-07, 0, 3, 0, 3, 0, -3, 0, -1.19209e-07, 8.43777, 18.8681, 13.9339)
+pixel_size = 0.1
+text = "L  17
+
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="Label3D2" type="Label3D" parent="Toni/L 17"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, -8.44855, 18.8681, 13.9339)
+pixel_size = 0.1
+text = "L  17
+
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
+
+[node name="Midlertidig_FlyHangar" parent="." instance=ExtResource("18_ofge4")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -702.639, 0.0155945, 0.0458469)
+
+[node name="Floor" type="CSGBox3D" parent="Midlertidig_FlyHangar"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.0408707, -0.499914, -2.67963)
+use_collision = true
+size = Vector3(23.5002, 1, 75.834)
+material = SubResource("StandardMaterial3D_plarn")
+
+[node name="Barrak1" type="MeshInstance3D" parent="Midlertidig_FlyHangar"]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 53.4107, -0.0155945, -69.1979)
+mesh = ExtResource("12_j83cm")
+skeleton = NodePath("../..")
+
+[node name="Barrak2" type="MeshInstance3D" parent="Midlertidig_FlyHangar"]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, 18.4066, -0.0155945, -69.1979)
+mesh = ExtResource("12_j83cm")
+skeleton = NodePath("../..")
+
+[node name="Barrak3" type="MeshInstance3D" parent="Midlertidig_FlyHangar"]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, -16.7841, -0.0155945, -69.1979)
+mesh = ExtResource("12_j83cm")
+skeleton = NodePath("../..")
+
+[node name="Barrak4" type="MeshInstance3D" parent="Midlertidig_FlyHangar"]
+transform = Transform3D(7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, -53.4786, -0.0155945, -69.1979)
+mesh = ExtResource("12_j83cm")
+skeleton = NodePath("../..")
+
+[node name="albatros" parent="Midlertidig_FlyHangar" instance=ExtResource("20_0o7ic")]
+transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796, 29.3846, -0.0155945, -5.05396)
+
+[node name="albatros2" parent="Midlertidig_FlyHangar" instance=ExtResource("20_0o7ic")]
+transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796, 16.7367, -0.0155945, -5.05396)
+
+[node name="albatros3" parent="Midlertidig_FlyHangar" instance=ExtResource("20_0o7ic")]
+transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796, 2.11144, -0.0155945, -5.05396)
+
+[node name="albatros4" parent="Midlertidig_FlyHangar" instance=ExtResource("20_0o7ic")]
+transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796, -13.4548, -0.0155945, -5.05396)
+
+[node name="albatros5" parent="Midlertidig_FlyHangar" instance=ExtResource("20_0o7ic")]
+transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796, -27.8752, -0.0155945, -5.05396)

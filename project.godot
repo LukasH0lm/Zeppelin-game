@@ -31,6 +31,7 @@ enabled=PackedStringArray("res://addons/AutoMat/plugin.cfg", "res://addons/dialo
 [filesystem]
 
 import/blender/enabled=false
+import/fbx/enabled=false
 
 [input]
 
