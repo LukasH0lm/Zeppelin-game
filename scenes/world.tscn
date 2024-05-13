@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=30 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -20,6 +20,9 @@
 [ext_resource type="PackedScene" uid="uid://deqq5jo27skgy" path="res://data/models/Toni/Toni.dae" id="16_n10w2"]
 [ext_resource type="PackedScene" uid="uid://cyhxw28hj6ord" path="res://data/models/FlyHangar/Midlertidig_FlyHangar.dae" id="18_ofge4"]
 [ext_resource type="PackedScene" uid="uid://ca7ejajo3l4qx" path="res://data/models/Albatros D III/albatros.dae" id="20_0o7ic"]
+[ext_resource type="PackedScene" uid="uid://dvs5fanjyhb73" path="res://data/models/tower/tower.dae" id="21_b5faj"]
+[ext_resource type="PackedScene" uid="uid://bhkdo3k0luprn" path="res://data/models/warehouse/warehouse.dae" id="22_6p0e1"]
+[ext_resource type="PackedScene" uid="uid://ok7ok1hwy58m" path="res://data/models/small house/small house.dae" id="23_1o0rt"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -151,25 +154,46 @@ text = "L  54
 "
 font = SubResource("FontFile_kfhs5")
 
-[node name="TrainTracks" type="Node3D" parent="."]
-transform = Transform3D(0.994703, 0, -0.102793, 0, 1, 0, 0.102793, 0, 0.994703, -61, 0, 63)
+[node name="TrainTracksTobiasToni" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -310.659, -0.142548, -19.7381)
 
-[node name="Tr_Sec_1" parent="TrainTracks" instance=ExtResource("11_8rntj")]
+[node name="Tr_Sec_1" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, 45)
 
-[node name="Tr_Sec_2" parent="TrainTracks" instance=ExtResource("11_8rntj")]
+[node name="Tr_Sec_2" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -63.698)
 
-[node name="Tr_Sec_3" parent="TrainTracks" instance=ExtResource("11_8rntj")]
+[node name="Tr_Sec_3" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -173)
 
-[node name="Tr_Sec_4" parent="TrainTracks" instance=ExtResource("11_8rntj")]
+[node name="Tr_Sec_4" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -278.881)
 
-[node name="Tr_Sec_5" parent="TrainTracks" instance=ExtResource("11_8rntj")]
+[node name="Tr_Sec_5" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -387.579)
 
-[node name="Tr_Sec_6" parent="TrainTracks" instance=ExtResource("11_8rntj")]
+[node name="Tr_Sec_6" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -496.881)
+
+[node name="TrainTracksToska" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 323.074, -0.143, -19.738)
+
+[node name="Tr_Sec_1" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, 45)
+
+[node name="Tr_Sec_2" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -63.698)
+
+[node name="Tr_Sec_3" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -173)
+
+[node name="Tr_Sec_4" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -278.881)
+
+[node name="Tr_Sec_5" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -387.579)
+
+[node name="Tr_Sec_6" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -496.881)
 
 [node name="Terrain3D" type="Terrain3D" parent="."]
@@ -194,7 +218,7 @@ transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
 
 [node name="Tobias" parent="." instance=ExtResource("15_qj725")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -511.825, 6.9955, -14.6663)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -423.54, 6.9955, -14.6663)
 
 [node name="Floor" type="CSGBox3D" parent="Tobias"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1157, -7.48651, 6.41227)
@@ -236,7 +260,7 @@ text = "L  22
 font = SubResource("FontFile_kfhs5")
 
 [node name="Toni" parent="." instance=ExtResource("16_n10w2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -422.997, 6.995, -14.666)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -510.432, 6.995, -14.666)
 
 [node name="Floor" type="CSGBox3D" parent="Toni"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1157, -7.48651, 6.41227)
@@ -321,3 +345,42 @@ transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796
 
 [node name="albatros5" parent="Midlertidig_FlyHangar" instance=ExtResource("20_0o7ic")]
 transform = Transform3D(0.999796, 0, -0.0202095, 0, 1, 0, 0.0202095, 0, 0.999796, -27.8752, -0.0155945, -5.05396)
+
+[node name="tower" parent="." instance=ExtResource("21_b5faj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -360, -0.5, 150)
+
+[node name="tower4" parent="." instance=ExtResource("21_b5faj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -359.309, -0.5, -140)
+
+[node name="tower2" parent="." instance=ExtResource("21_b5faj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -620, -0.5, 150)
+
+[node name="tower3" parent="." instance=ExtResource("21_b5faj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -620, -0.5, -140)
+
+[node name="warehouse" parent="." instance=ExtResource("22_6p0e1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, -603.102, -0.165, 40.6289)
+
+[node name="warehouse2" parent="." instance=ExtResource("22_6p0e1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, -603.102, -0.165, -15.6024)
+
+[node name="warehouse3" parent="." instance=ExtResource("22_6p0e1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 3, -603.162, -0.165, -72.0119)
+
+[node name="small house" parent="." instance=ExtResource("23_1o0rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, 51.8873)
+
+[node name="small house2" parent="." instance=ExtResource("23_1o0rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, 32.4237)
+
+[node name="small house3" parent="." instance=ExtResource("23_1o0rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, 14.3238)
+
+[node name="small house4" parent="." instance=ExtResource("23_1o0rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, -5.48823)
+
+[node name="small house5" parent="." instance=ExtResource("23_1o0rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, -28.2638)
+
+[node name="small house6" parent="." instance=ExtResource("23_1o0rt")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, -50.885)
