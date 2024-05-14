@@ -22,7 +22,11 @@ var original_height: float = 1.0  # Original height in meters, assuming the defa
 
 
 # Define raycast length
-const RAY_LENGTH = 1
+const RAY_LENGTH = 2
+
+
+# Define custom signals
+signal book_clicked
 
 # Node References
 @onready var parts: Dictionary = {
@@ -59,7 +63,13 @@ func _input(event: InputEvent) -> void:
 		if event is InputEventMouseMotion:
 			handle_mouse_movement(event)
 		if event is InputEventMouseButton and event.is_pressed():
-			check_if_looking_at_npc()
+			check_if_looking_at_interactable()
+		if event is InputEventKey and event.as_text_key_label() == "P" and event.is_pressed():
+			print(event.as_text_key_label())
+			print(get_parent().get_child(0).name)
+			var photobook = get_parent().get_child(0)
+			photobook.visible = !photobook.visible
+			
 	
 	
 
@@ -137,7 +147,7 @@ func set_player_height(height: float) -> void:
 
 var times_checked = 0
 
-func check_if_looking_at_npc():
+func check_if_looking_at_interactable():
 	
 	
 	
@@ -165,19 +175,44 @@ func check_if_looking_at_npc():
 
 		var collider = result["collider"]
 		print("found collider: " + collider.name)
+		
 		if collider.is_in_group("npcs"):
-			print("collider is an npc")
-			var npc = collider
-			# Open dialogue tree with this NPC
-			var dialogue_filepath = "res://dialogue/" + collider.name + ".dialogue"
-			var dialogue_file = load(dialogue_filepath)
-			
-			var baloon_filepath = "res://dialogue/balloon.tscn"
-			var baloon_file = load(baloon_filepath)
-			
-			if dialogue_file:
-				Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-				DialogueManager.show_dialogue_balloon_scene(baloon_file, dialogue_file)
-				
+			handle_looking_at_npc(collider)
+		elif collider.get_name() == "PolaroidBody":
+			handle_looking_at_polaroid(collider)
 
+
+func handle_looking_at_npc(collider):
+
+	print("collider is an npc")
+	var npc = collider
+	# Open dialogue tree with this NPC
+	var dialogue_filepath = "res://dialogue/" + collider.name + ".dialogue"
+	var dialogue_file = load(dialogue_filepath)
+	
+	var baloon_filepath = "res://dialogue/balloon.tscn"
+	var baloon_file = load(baloon_filepath)
+	
+	if dialogue_file:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		DialogueManager.show_dialogue_balloon_scene(baloon_file, dialogue_file)
+
+func handle_looking_at_polaroid(collider):
+	print("body:" + collider.name)
+	print("mesh:" + collider.get_parent().name)
+	print("name:" + collider.get_parent().get_parent().name)
+	
+
+	
+	
+	var number = collider.get_parent().get_parent().name.substr(8)
+	
+	#only works specifically for the word "polaroid"
+	print("number:" + number)
+	
+	# send signal to book
+	emit_signal("book_clicked", number)
+	
+	collider.get_parent().get_parent().queue_free()
+	
 

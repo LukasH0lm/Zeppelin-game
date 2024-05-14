@@ -1,0 +1,142 @@
+[gd_scene load_steps=20 format=3 uid="uid://ca0alyivhjik3"]
+
+[ext_resource type="Texture2D" uid="uid://bise2gvmphbt7" path="res://assets/textures/polaroid-black.png" id="1_pxypx"]
+[ext_resource type="Texture2D" uid="uid://b7nrjjjnm6jo" path="res://assets/spritesheet/sparkle.png" id="2_eh7ne"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r471o"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44l3d"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lj5e8"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7ayw"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgpaw"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8xg2"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbq3t"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(192, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7671v"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(224, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iul41"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t80vk"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4rit"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icacu"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdc0f"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pibu4"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxmpx"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y7hio"]
+atlas = ExtResource("2_eh7ne")
+region = Rect2(224, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ms84v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r471o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44l3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lj5e8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7ayw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgpaw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8xg2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbq3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7671v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iul41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t80vk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4rit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_icacu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jdc0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pibu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxmpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y7hio")
+}],
+"loop": true,
+"name": &"default",
+"speed": 18.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Polaroid-black" type="Sprite2D" parent="."]
+position = Vector2(400, 301)
+texture = ExtResource("1_pxypx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(225, 416)
+scale = Vector2(13.75, 7.75)
+sprite_frames = SubResource("SpriteFrames_ms84v")
+frame_progress = 0.902451
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(528, 122)
+scale = Vector2(13.75, 7.75)
+sprite_frames = SubResource("SpriteFrames_ms84v")
+frame_progress = 0.172461

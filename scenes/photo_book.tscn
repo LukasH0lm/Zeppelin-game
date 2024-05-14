@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://3n8o4xab0ygw"]
+
+[ext_resource type="Script" path="res://PhotoBook.gd" id="1_o1nao"]
+[ext_resource type="Texture2D" uid="uid://5231gdffsya7" path="res://assets/textures/old_paper.jpg" id="2_ghup6"]
+[ext_resource type="Texture2D" uid="uid://ge571k2andgb" path="res://assets/photographs/AE_Tondern_004.jpg" id="2_qqb2t"]
+[ext_resource type="Texture2D" uid="uid://cnmhjpq1kwxt1" path="res://assets/photographs/AE_Tondern_010.jpg" id="3_y2nt3"]
+[ext_resource type="Texture2D" uid="uid://dl3abakodscl4" path="res://assets/photographs/AE_Tondern_041.jpg" id="4_3xltf"]
+[ext_resource type="Texture2D" uid="uid://cyl25yja7qy84" path="res://assets/photographs/AE_Tondern_047.jpg" id="5_6hg0n"]
+
+[node name="PhotoBook" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -19.0
+offset_right = -45.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o1nao")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(1028, 578)
+scale = Vector2(1.21875, 1.15667)
+texture = ExtResource("2_ghup6")
+
+[node name="photo1" type="Node2D" parent="."]
+position = Vector2(175, 119)
+
+[node name="Sprite2D" type="Sprite2D" parent="photo1"]
+position = Vector2(336, 173)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_qqb2t")
+
+[node name="photo2" type="Node2D" parent="."]
+position = Vector2(175, 119)
+
+[node name="Sprite2D" type="Sprite2D" parent="photo2"]
+position = Vector2(330, 683)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_y2nt3")
+
+[node name="photo3" type="Node2D" parent="."]
+position = Vector2(175, 119)
+
+[node name="Sprite2D" type="Sprite2D" parent="photo3"]
+position = Vector2(1551, 186)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_3xltf")
+
+[node name="photo4" type="Node2D" parent="."]
+position = Vector2(175, 119)
+
+[node name="Sprite2D" type="Sprite2D" parent="photo4"]
+position = Vector2(1415, 708)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_6hg0n")

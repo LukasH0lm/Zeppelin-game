@@ -1,7 +1,8 @@
-[gd_scene load_steps=30 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=32 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
+[ext_resource type="PackedScene" uid="uid://3n8o4xab0ygw" path="res://scenes/photo_book.tscn" id="2_adie2"]
 [ext_resource type="Texture2D" uid="uid://bfmbndv1sge56" path="res://data/sky.exr" id="3_5hgqm"]
 [ext_resource type="PackedScene" uid="uid://qumac0c5p0tv" path="res://data/models/Toska/Toska.dae" id="4_japnf"]
 [ext_resource type="Texture2D" uid="uid://r1gcyfi2x53t" path="res://data/models/Toska/concrete_floor_worn_001_disp_4k.png" id="5_ido5m"]
@@ -23,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://dvs5fanjyhb73" path="res://data/models/tower/tower.dae" id="21_b5faj"]
 [ext_resource type="PackedScene" uid="uid://bhkdo3k0luprn" path="res://data/models/warehouse/warehouse.dae" id="22_6p0e1"]
 [ext_resource type="PackedScene" uid="uid://ok7ok1hwy58m" path="res://data/models/small house/small house.dae" id="23_1o0rt"]
+[ext_resource type="PackedScene" uid="uid://bi5splxqygul1" path="res://scenes/polaroid3d.tscn" id="24_8j60x"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -73,6 +75,12 @@ size = Vector3(1.35992, 1.86157, 1)
 
 [node name="world" type="Node3D"]
 script = ExtResource("1_x87ln")
+
+[node name="PhotoBook" parent="." instance=ExtResource("2_adie2")]
+offset_left = -1053.0
+offset_top = -543.0
+offset_right = -1352.0
+offset_bottom = -803.0
 
 [node name="player" parent="." instance=ExtResource("1_tnv5a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -463.482, 1.00703, 86.3984)
@@ -384,3 +392,19 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.7
 
 [node name="small house6" parent="." instance=ExtResource("23_1o0rt")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.703, -0.0831118, -50.885)
+
+[node name="Polaroids" type="Node3D" parent="."]
+
+[node name="polaroid1" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -462.296, 0, 94.3887)
+
+[node name="polaroid2" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -463.431, 0.00254023, 94.3651)
+
+[node name="polaroid3" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -464.693, 0.00254023, 94.3416)
+
+[node name="polaroid4" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -465.947, 0.00254023, 94.3667)
+
+[connection signal="book_clicked" from="player" to="PhotoBook" method="showphoto"]
