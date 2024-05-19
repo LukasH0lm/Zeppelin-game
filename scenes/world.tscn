@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=42 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bj3r7m42ead3e" path="res://assets/NPC/NPCWorkers/Sittingworker_npc.tscn" id="15_f3p5i"]
 [ext_resource type="PackedScene" uid="uid://bf6x8x2kpmkpf" path="res://data/models/L 22/L 22.dae" id="15_pki2o"]
 [ext_resource type="PackedScene" uid="uid://bsboeour6agq6" path="res://data/models/Tobias/Tobias.dae" id="15_qj725"]
+[ext_resource type="PackedScene" uid="uid://1yeapj2l167e" path="res://assets/NPC/NPCPilot/Pilot.tscn" id="15_x44ul"]
 [ext_resource type="PackedScene" uid="uid://cyc00vbpeu541" path="res://assets/NPC/NPCBaldSoldier/LeaningSoldier.tscn" id="16_56noi"]
 [ext_resource type="PackedScene" uid="uid://bajg112vy6g1x" path="res://assets/NPC/NPCWorkers/fixsitworker_npc.tscn" id="16_j5umv"]
 [ext_resource type="PackedScene" uid="uid://deqq5jo27skgy" path="res://data/models/Toni/Toni.dae" id="16_n10w2"]
@@ -80,7 +81,7 @@ cache/0/32/12/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
 cache/0/32/12/glyphs/0/texture_idx = -1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e0mah"]
-size = Vector3(0.812671, 1.79872, 0.669543)
+size = Vector3(0.812671, 2.00922, 0.955044)
 
 [node name="world" type="Node3D"]
 script = ExtResource("1_x87ln")
@@ -233,6 +234,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
+
+[node name="Pilot" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.053, 1.04261, 84.7384)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pilot"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -24189.5, -0.45002, -6603.95)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="Sketchfab_Scene" parent="Pilot" instance=ExtResource("15_x44ul")]
+transform = Transform3D(-3.41694, 0, -77.4938, 0, 61.2912, 0, 76.6941, 0, -3.45257, -24194.4, -103.764, -6599.44)
 
 [node name="Soldier2" type="CharacterBody3D" parent="." groups=["npcs"]]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.707, 1.05485, 82.4837)
