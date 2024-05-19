@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=41 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -16,17 +16,20 @@
 [ext_resource type="ArrayMesh" uid="uid://ct05ptdin3spt" path="res://assets/models/ger_barracks2.obj" id="12_j83cm"]
 [ext_resource type="Script" path="res://scenes/CharacterBody3D.gd" id="13_kqvng"]
 [ext_resource type="PackedScene" uid="uid://c4hl2qs51530b" path="res://scenes/soldier.tscn" id="13_pkys3"]
-[ext_resource type="PackedScene" uid="uid://bj3r7m42ead3e" path="res://assets/models/NPCWorkers/Sittingworker_npc.tscn" id="15_f3p5i"]
+[ext_resource type="PackedScene" uid="uid://2xkvw1fis68p" path="res://assets/NPC/NPCBaldSoldier/idleSoldier.tscn" id="15_acmh1"]
+[ext_resource type="PackedScene" uid="uid://bj3r7m42ead3e" path="res://assets/NPC/NPCWorkers/Sittingworker_npc.tscn" id="15_f3p5i"]
 [ext_resource type="PackedScene" uid="uid://bf6x8x2kpmkpf" path="res://data/models/L 22/L 22.dae" id="15_pki2o"]
 [ext_resource type="PackedScene" uid="uid://bsboeour6agq6" path="res://data/models/Tobias/Tobias.dae" id="15_qj725"]
-[ext_resource type="PackedScene" uid="uid://bajg112vy6g1x" path="res://assets/models/NPCWorkers/fixsitworker_npc.tscn" id="16_j5umv"]
+[ext_resource type="PackedScene" uid="uid://cyc00vbpeu541" path="res://assets/NPC/NPCBaldSoldier/LeaningSoldier.tscn" id="16_56noi"]
+[ext_resource type="PackedScene" uid="uid://bajg112vy6g1x" path="res://assets/NPC/NPCWorkers/fixsitworker_npc.tscn" id="16_j5umv"]
 [ext_resource type="PackedScene" uid="uid://deqq5jo27skgy" path="res://data/models/Toni/Toni.dae" id="16_n10w2"]
-[ext_resource type="PackedScene" uid="uid://bqrf5tfjk6au3" path="res://assets/models/NPCWorkers/idleStandworker_npc.tscn" id="17_gp25a"]
-[ext_resource type="PackedScene" uid="uid://odh7j3gyf62o" path="res://assets/models/NPCWorkers/KneePointworker_npc.tscn" id="18_2w42j"]
+[ext_resource type="PackedScene" uid="uid://bqrf5tfjk6au3" path="res://assets/NPC/NPCWorkers/idleStandworker_npc.tscn" id="17_gp25a"]
+[ext_resource type="PackedScene" uid="uid://booe26gtf4vbd" path="res://assets/NPC/NPCBaldSoldier/LookingSoldier.tscn" id="17_naebf"]
+[ext_resource type="PackedScene" uid="uid://odh7j3gyf62o" path="res://assets/NPC/NPCWorkers/KneePointworker_npc.tscn" id="18_2w42j"]
 [ext_resource type="PackedScene" uid="uid://cyhxw28hj6ord" path="res://data/models/FlyHangar/Midlertidig_FlyHangar.dae" id="18_ofge4"]
-[ext_resource type="PackedScene" uid="uid://dtjk0sukbmsec" path="res://assets/models/NPCWorkers/Lookingworker_npc.tscn" id="19_f6x2u"]
+[ext_resource type="PackedScene" uid="uid://dtjk0sukbmsec" path="res://assets/NPC/NPCWorkers/Lookingworker_npc.tscn" id="19_f6x2u"]
 [ext_resource type="PackedScene" uid="uid://ca7ejajo3l4qx" path="res://data/models/Albatros D III/albatros.dae" id="20_0o7ic"]
-[ext_resource type="PackedScene" uid="uid://dp1dclhthu4eu" path="res://assets/models/NPCWorkers/Chillworker_npc.tscn" id="21_atp43"]
+[ext_resource type="PackedScene" uid="uid://dp1dclhthu4eu" path="res://assets/NPC/NPCWorkers/Chillworker_npc.tscn" id="21_atp43"]
 [ext_resource type="PackedScene" uid="uid://dvs5fanjyhb73" path="res://data/models/tower/tower.dae" id="21_b5faj"]
 [ext_resource type="PackedScene" uid="uid://bhkdo3k0luprn" path="res://data/models/warehouse/warehouse.dae" id="22_6p0e1"]
 [ext_resource type="PackedScene" uid="uid://ok7ok1hwy58m" path="res://data/models/small house/small house.dae" id="23_1o0rt"]
@@ -77,7 +80,7 @@ cache/0/32/12/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
 cache/0/32/12/glyphs/0/texture_idx = -1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e0mah"]
-size = Vector3(0.950586, 2.05119, 0.540287)
+size = Vector3(0.812671, 1.79872, 0.669543)
 
 [node name="world" type="Node3D"]
 script = ExtResource("1_x87ln")
@@ -231,6 +234,72 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
 
+[node name="Soldier2" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.707, 1.05485, 82.4837)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier2"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 2.08067, -1.55273)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="Soldier2" instance=ExtResource("15_acmh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -106.468, 0)
+
+[node name="Soldier3" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.707, 1.05485, 82.4837)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier3"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -108.59, 8.62531, -48.6807)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="Soldier3" instance=ExtResource("16_56noi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.531, -104.319, -76.7393)
+
+[node name="WatchTowerSoldier" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -617.504, 10.8982, 151.517)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="WatchTowerSoldier" instance=ExtResource("17_naebf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
+
+[node name="WatchTowerSoldier2" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.00195262, 0, 0.00980751, 0, 0.01, 0, -0.00980751, 0, 0.00195262, -358.054, 10.8906, 147.626)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier2"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="WatchTowerSoldier2" instance=ExtResource("17_naebf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
+
+[node name="WatchTowerSoldier3" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.00195262, 0, 0.00980751, 0, 0.01, 0, -0.00980751, 0, 0.00195262, -357.433, 10.8906, -142.12)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier3"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="WatchTowerSoldier3" instance=ExtResource("17_naebf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
+
+[node name="WatchTowerSoldier4" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(-0.00236804, 0, -0.00971557, 0, 0.01, 0, 0.00971557, 0, -0.00236804, -621.805, 10.8906, -138.138)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier4"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="WatchTowerSoldier4" instance=ExtResource("17_naebf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
+
 [node name="Worker" type="CharacterBody3D" parent="." groups=["npcs"]]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -556.471, 1.04106, 82.1456)
 script = ExtResource("13_kqvng")
@@ -241,6 +310,17 @@ shape = SubResource("BoxShape3D_e0mah")
 
 [node name="WorkerNPC" parent="Worker" instance=ExtResource("15_f3p5i")]
 transform = Transform3D(-119.256, 0, 59.4499, 0, 110.419, 0, -46.3089, 0, -153.097, -15.0898, -103.859, 66.1602)
+
+[node name="Worker2" type="CharacterBody3D" parent="." groups=["npcs"]]
+transform = Transform3D(0.000821473, 0, -0.0099662, 0, 0.01, 0, 0.0099662, 0, 0.000821473, -558.505, 1.90499, 45.3291)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker2"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -4.14063, -154.587, 200.06)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="WorkerNPC" parent="Worker2" instance=ExtResource("21_atp43")]
+transform = Transform3D(92.4464, 0, 0, 0, 146.661, 0, 0, 0, 116.125, 0, -192.216, 187.685)
 
 [node name="Worker3" type="CharacterBody3D" parent="." groups=["npcs"]]
 transform = Transform3D(0.00919924, 0, -0.00392096, 0, 0.01, 0, 0.00392096, 0, 0.00919924, -701.421, 1.1272, 29.5986)
@@ -296,17 +376,6 @@ shape = SubResource("BoxShape3D_e0mah")
 
 [node name="WorkerNPC" parent="Worker9" instance=ExtResource("15_f3p5i")]
 transform = Transform3D(114.623, 0, 8.2016e-05, 0, 139.462, 0, -8.39233e-05, 0, 67.404, 0, 0, 0)
-
-[node name="Worker2" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.000821473, 0, -0.0099662, 0, 0.01, 0, 0.0099662, 0, 0.000821473, -558.505, 1.90499, 45.3291)
-script = ExtResource("13_kqvng")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker2"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -4.14063, -154.587, 200.06)
-shape = SubResource("BoxShape3D_e0mah")
-
-[node name="WorkerNPC" parent="Worker2" instance=ExtResource("21_atp43")]
-transform = Transform3D(92.4464, 0, 0, 0, 146.661, 0, 0, 0, 116.125, 0, -192.216, 187.685)
 
 [node name="Tobias" parent="." instance=ExtResource("15_qj725")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -423.54, 6.9955, -14.6663)
