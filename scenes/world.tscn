@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=65 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -50,6 +50,10 @@
 [ext_resource type="PackedScene" uid="uid://chyxbmgxtheku" path="res://assets/models/ToolBox/suitecase_torture_tools.glb" id="48_la1we"]
 [ext_resource type="PackedScene" uid="uid://m267nyx8pxnc" path="res://assets/models/WorkTable/work_bench_with_tools.glb" id="49_pq627"]
 [ext_resource type="PackedScene" uid="uid://m8gl4v8tc47o" path="res://assets/models/stol/chair.glb" id="50_u7r62"]
+[ext_resource type="PackedScene" uid="uid://dusss4jw861n6" path="res://assets/models/WoodBox/wood_box.glb" id="51_uqbyk"]
+[ext_resource type="PackedScene" uid="uid://d0wto510w6rpd" path="res://assets/models/hose/garden_hose__faucet_free.glb" id="52_jijwc"]
+[ext_resource type="PackedScene" uid="uid://b360uodfdtoxq" path="res://assets/models/firehouse/old_fire_hose_box.glb" id="53_d2l7u"]
+[ext_resource type="PackedScene" uid="uid://ime1m2wv0wca" path="res://assets/models/barrel2/old_rusted_metal_barrel.glb" id="54_5kgk6"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -858,7 +862,64 @@ transform = Transform3D(-0.469456, 0, 0.882956, 0, 1, 0, -0.882956, 0, -0.469456
 [node name="Chair2" parent="." instance=ExtResource("50_u7r62")]
 transform = Transform3D(-0.592168, 0, -0.805815, 0, 1, 0, 0.805815, 0, -0.592168, -550.779, 0.0287747, -84.7535)
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("50_u7r62")]
+[node name="Chair3" parent="." instance=ExtResource("50_u7r62")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -633.746, 0, 35.7499)
+
+[node name="WoodenBox" parent="." instance=ExtResource("51_uqbyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -523.392, -0.223546, 77.1106)
+
+[node name="WoodenBox3" parent="." instance=ExtResource("51_uqbyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -523.392, -0.223546, 78.3099)
+
+[node name="WoodenBox2" parent="." instance=ExtResource("51_uqbyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -523.392, 0.699126, 77.1106)
+
+[node name="WoodenBox4" parent="." instance=ExtResource("51_uqbyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -523.392, 0.699126, 78.3259)
+
+[node name="WaterHose" parent="." instance=ExtResource("52_jijwc")]
+transform = Transform3D(-0.000677002, 0, -0.027799, 0, 0.0233633, 0, 0.0191, 0, -0.000985336, -560.961, 0, 78.4881)
+
+[node name="WaterHose2" parent="." instance=ExtResource("52_jijwc")]
+transform = Transform3D(-0.000677002, 0, -0.027799, 0, 0.0233633, 0, 0.0191, 0, -0.000985336, -473.947, 0, 78.4881)
+
+[node name="WaterHose3" parent="." instance=ExtResource("52_jijwc")]
+transform = Transform3D(-0.000677002, 0, -0.027799, 0, 0.0233633, 0, 0.0191, 0, -0.000985336, -38.4823, 0, 78.4881)
+
+[node name="FireHose" parent="." instance=ExtResource("53_d2l7u")]
+transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.0519003, -559.55, -0.101369, 76.33)
+
+[node name="FireHose2" parent="." instance=ExtResource("53_d2l7u")]
+transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.0519003, -472.546, -0.196777, 76.33)
+
+[node name="FireHose3" parent="." instance=ExtResource("53_d2l7u")]
+transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.0519003, -36.8549, -0.196777, 76.33)
+
+[node name="Barrel" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -533.108, 0.00159204, -98.5705)
+
+[node name="Barrel2" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -532.359, 0.00159204, -98.5705)
+
+[node name="Barrel3" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -531.619, 0.00159204, -98.5705)
+
+[node name="Barrel4" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -531.996, 0.755958, -98.5705)
+
+[node name="Barrel5" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -532.744, 0.755958, -98.5705)
+
+[node name="Barrel6" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -532.325, 1.50256, -98.5705)
+
+[node name="Barrel7" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -577.69, 0.0481989, -65.2999)
+
+[node name="Barrel8" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -578.447, 0.0481989, -65.2999)
+
+[node name="Barrel9" parent="." instance=ExtResource("54_5kgk6")]
+transform = Transform3D(0.330057, 0, 0, 0, 0.0519296, -0.284141, 0, 0.237394, 0.0621554, -578.035, 0.290499, -66.2553)
 
 [connection signal="book_clicked" from="player" to="PhotoBook" method="showphoto"]
