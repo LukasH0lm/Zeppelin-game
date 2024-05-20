@@ -5,68 +5,11 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.1.1 commit date:2024-04-15, commit time:15:11, hash:e1743a0317bc</authoring_tool>
     </contributor>
-    <created>2024-05-13T15:13:09</created>
-    <modified>2024-05-13T15:13:09</modified>
+    <created>2024-05-20T13:34:40</created>
+    <modified>2024-05-20T13:34:40</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
-  <library_cameras>
-    <camera id="Camera-camera" name="Camera">
-      <optics>
-        <technique_common>
-          <perspective>
-            <xfov sid="xfov">39.59775</xfov>
-            <aspect_ratio>1.777778</aspect_ratio>
-            <znear sid="znear">0.1</znear>
-            <zfar sid="zfar">100</zfar>
-          </perspective>
-        </technique_common>
-      </optics>
-      <extra>
-        <technique profile="blender">
-          <shiftx sid="shiftx" type="float">0</shiftx>
-          <shifty sid="shifty" type="float">0</shifty>
-          <dof_distance sid="dof_distance" type="float">10</dof_distance>
-        </technique>
-      </extra>
-    </camera>
-  </library_cameras>
-  <library_lights>
-    <light id="Light-light" name="Light">
-      <technique_common>
-        <point>
-          <color sid="color">1000 1000 1000</color>
-          <constant_attenuation>1</constant_attenuation>
-          <linear_attenuation>0</linear_attenuation>
-          <quadratic_attenuation>0</quadratic_attenuation>
-        </point>
-      </technique_common>
-      <extra>
-        <technique profile="blender">
-          <type sid="type" type="int">0</type>
-          <flag sid="flag" type="int">0</flag>
-          <mode sid="mode" type="int">2097153</mode>
-          <red sid="red" type="float">1</red>
-          <green sid="green" type="float">1</green>
-          <blue sid="blue" type="float">1</blue>
-          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
-          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
-          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
-          <energy sid="blender_energy" type="float">1000</energy>
-          <spotsize sid="spotsize" type="float">75</spotsize>
-          <spotblend sid="spotblend" type="float">0.15</spotblend>
-          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
-          <clipend sid="clipend" type="float">30.002</clipend>
-          <bias sid="bias" type="float">1</bias>
-          <radius sid="radius" type="float">0.1</radius>
-          <area_shape sid="area_shape" type="int">1</area_shape>
-          <area_size sid="area_size" type="float">0.1</area_size>
-          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
-          <area_sizez sid="area_sizez" type="float">1</area_sizez>
-        </technique>
-      </extra>
-    </light>
-  </library_lights>
   <library_effects>
     <effect id="Material__0-effect">
       <profile_COMMON>
@@ -5682,9 +5625,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="beam_01" name="beam_01" type="NODE">
+      <node id="beam_01_col" name="beam_01_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_132-mesh" name="beam_01">
+        <instance_geometry url="#Mesh_132-mesh" name="beam_01_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5694,9 +5637,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_02" name="beam_02" type="NODE">
+      <node id="beam_02_col" name="beam_02_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_131-mesh" name="beam_02">
+        <instance_geometry url="#Mesh_131-mesh" name="beam_02_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5706,9 +5649,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_03" name="beam_03" type="NODE">
+      <node id="beam_03_col" name="beam_03_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_130-mesh" name="beam_03">
+        <instance_geometry url="#Mesh_130-mesh" name="beam_03_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5718,9 +5661,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_04" name="beam_04" type="NODE">
+      <node id="beam_04_col" name="beam_04_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_129-mesh" name="beam_04">
+        <instance_geometry url="#Mesh_129-mesh" name="beam_04_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5730,9 +5673,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_05" name="beam_05" type="NODE">
+      <node id="beam_05_col" name="beam_05_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_128-mesh" name="beam_05">
+        <instance_geometry url="#Mesh_128-mesh" name="beam_05_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5742,9 +5685,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_06" name="beam_06" type="NODE">
+      <node id="beam_06_col" name="beam_06_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_127-mesh" name="beam_06">
+        <instance_geometry url="#Mesh_127-mesh" name="beam_06_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5754,9 +5697,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_07" name="beam_07" type="NODE">
+      <node id="beam_07_col" name="beam_07_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_126-mesh" name="beam_07">
+        <instance_geometry url="#Mesh_126-mesh" name="beam_07_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5766,9 +5709,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_08" name="beam_08" type="NODE">
+      <node id="beam_08_col" name="beam_08_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_125-mesh" name="beam_08">
+        <instance_geometry url="#Mesh_125-mesh" name="beam_08_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5778,9 +5721,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_09" name="beam_09" type="NODE">
+      <node id="beam_09_col" name="beam_09_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_124-mesh" name="beam_09">
+        <instance_geometry url="#Mesh_124-mesh" name="beam_09_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5790,9 +5733,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_10" name="beam_10" type="NODE">
+      <node id="beam_10_col" name="beam_10_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_123-mesh" name="beam_10">
+        <instance_geometry url="#Mesh_123-mesh" name="beam_10_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5802,9 +5745,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_11" name="beam_11" type="NODE">
+      <node id="beam_11_col" name="beam_11_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_122-mesh" name="beam_11">
+        <instance_geometry url="#Mesh_122-mesh" name="beam_11_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5814,9 +5757,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_12" name="beam_12" type="NODE">
+      <node id="beam_12_col" name="beam_12_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_121-mesh" name="beam_12">
+        <instance_geometry url="#Mesh_121-mesh" name="beam_12_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5826,9 +5769,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_13" name="beam_13" type="NODE">
+      <node id="beam_13_col" name="beam_13_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_120-mesh" name="beam_13">
+        <instance_geometry url="#Mesh_120-mesh" name="beam_13_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5838,9 +5781,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_14" name="beam_14" type="NODE">
+      <node id="beam_14_col" name="beam_14_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_119-mesh" name="beam_14">
+        <instance_geometry url="#Mesh_119-mesh" name="beam_14_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5850,9 +5793,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_15" name="beam_15" type="NODE">
+      <node id="beam_15_col" name="beam_15_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_118-mesh" name="beam_15">
+        <instance_geometry url="#Mesh_118-mesh" name="beam_15_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5862,9 +5805,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_16" name="beam_16" type="NODE">
+      <node id="beam_16_col" name="beam_16_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_117-mesh" name="beam_16">
+        <instance_geometry url="#Mesh_117-mesh" name="beam_16_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5874,9 +5817,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_17" name="beam_17" type="NODE">
+      <node id="beam_17_col" name="beam_17_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_116-mesh" name="beam_17">
+        <instance_geometry url="#Mesh_116-mesh" name="beam_17_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5886,9 +5829,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_18" name="beam_18" type="NODE">
+      <node id="beam_18_col" name="beam_18_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_115-mesh" name="beam_18">
+        <instance_geometry url="#Mesh_115-mesh" name="beam_18_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5898,9 +5841,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_19" name="beam_19" type="NODE">
+      <node id="beam_19_col" name="beam_19_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_114-mesh" name="beam_19">
+        <instance_geometry url="#Mesh_114-mesh" name="beam_19_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5910,9 +5853,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_20" name="beam_20" type="NODE">
+      <node id="beam_20_col" name="beam_20_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_113-mesh" name="beam_20">
+        <instance_geometry url="#Mesh_113-mesh" name="beam_20_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5922,9 +5865,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_21" name="beam_21" type="NODE">
+      <node id="beam_21_col" name="beam_21_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_112-mesh" name="beam_21">
+        <instance_geometry url="#Mesh_112-mesh" name="beam_21_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5934,9 +5877,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_22" name="beam_22" type="NODE">
+      <node id="beam_22_col" name="beam_22_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_111-mesh" name="beam_22">
+        <instance_geometry url="#Mesh_111-mesh" name="beam_22_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5946,9 +5889,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_23" name="beam_23" type="NODE">
+      <node id="beam_23_col" name="beam_23_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_110-mesh" name="beam_23">
+        <instance_geometry url="#Mesh_110-mesh" name="beam_23_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5958,9 +5901,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_24" name="beam_24" type="NODE">
+      <node id="beam_24_col" name="beam_24_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_109-mesh" name="beam_24">
+        <instance_geometry url="#Mesh_109-mesh" name="beam_24_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5970,9 +5913,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_25" name="beam_25" type="NODE">
+      <node id="beam_25_col" name="beam_25_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_108-mesh" name="beam_25">
+        <instance_geometry url="#Mesh_108-mesh" name="beam_25_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5982,9 +5925,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_26" name="beam_26" type="NODE">
+      <node id="beam_26_col" name="beam_26_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_107-mesh" name="beam_26">
+        <instance_geometry url="#Mesh_107-mesh" name="beam_26_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -5994,9 +5937,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_27" name="beam_27" type="NODE">
+      <node id="beam_27_col" name="beam_27_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_106-mesh" name="beam_27">
+        <instance_geometry url="#Mesh_106-mesh" name="beam_27_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6006,9 +5949,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_28" name="beam_28" type="NODE">
+      <node id="beam_28_col" name="beam_28_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_105-mesh" name="beam_28">
+        <instance_geometry url="#Mesh_105-mesh" name="beam_28_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6018,9 +5961,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_29" name="beam_29" type="NODE">
+      <node id="beam_29_col" name="beam_29_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_104-mesh" name="beam_29">
+        <instance_geometry url="#Mesh_104-mesh" name="beam_29_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6030,9 +5973,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_30" name="beam_30" type="NODE">
+      <node id="beam_30_col" name="beam_30_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_103-mesh" name="beam_30">
+        <instance_geometry url="#Mesh_103-mesh" name="beam_30_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6042,9 +5985,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_31" name="beam_31" type="NODE">
+      <node id="beam_31_col" name="beam_31_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_102-mesh" name="beam_31">
+        <instance_geometry url="#Mesh_102-mesh" name="beam_31_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6054,9 +5997,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_32" name="beam_32" type="NODE">
+      <node id="beam_32_col" name="beam_32_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_101-mesh" name="beam_32">
+        <instance_geometry url="#Mesh_101-mesh" name="beam_32_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6066,9 +6009,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_33" name="beam_33" type="NODE">
+      <node id="beam_33_col" name="beam_33_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_100-mesh" name="beam_33">
+        <instance_geometry url="#Mesh_100-mesh" name="beam_33_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6078,9 +6021,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_34" name="beam_34" type="NODE">
+      <node id="beam_34_col" name="beam_34_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_099-mesh" name="beam_34">
+        <instance_geometry url="#Mesh_099-mesh" name="beam_34_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6090,9 +6033,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_35" name="beam_35" type="NODE">
+      <node id="beam_35_col" name="beam_35_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_098-mesh" name="beam_35">
+        <instance_geometry url="#Mesh_098-mesh" name="beam_35_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6102,9 +6045,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_36" name="beam_36" type="NODE">
+      <node id="beam_36_col" name="beam_36_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_097-mesh" name="beam_36">
+        <instance_geometry url="#Mesh_097-mesh" name="beam_36_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6114,9 +6057,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_37" name="beam_37" type="NODE">
+      <node id="beam_37_col" name="beam_37_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_096-mesh" name="beam_37">
+        <instance_geometry url="#Mesh_096-mesh" name="beam_37_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6126,9 +6069,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_38" name="beam_38" type="NODE">
+      <node id="beam_38_col" name="beam_38_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_095-mesh" name="beam_38">
+        <instance_geometry url="#Mesh_095-mesh" name="beam_38_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6138,9 +6081,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_39" name="beam_39" type="NODE">
+      <node id="beam_39_col" name="beam_39_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_094-mesh" name="beam_39">
+        <instance_geometry url="#Mesh_094-mesh" name="beam_39_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6150,9 +6093,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="beam_40" name="beam_40" type="NODE">
+      <node id="beam_40_col" name="beam_40_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_093-mesh" name="beam_40">
+        <instance_geometry url="#Mesh_093-mesh" name="beam_40_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6309,11 +6252,11 @@
           </instance_geometry>
         </node>
       </node>
-      <node id="concrete" name="concrete" type="NODE">
+      <node id="concrete_col" name="concrete_col" type="NODE">
         <matrix sid="transform">0.01 0 0 3.05176e-7 0 0.01 4.37114e-10 2.66793e-14 0 -4.37114e-10 0.01 0.7759985 0 0 0 1</matrix>
-        <node id="concrete_04" name="concrete_04" type="NODE">
+        <node id="concrete_04_col" name="concrete_04_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.08212 0.8447194 5.60806e-8 3.55271e-15 140.7111 -7.10543e-15 0 0.7792574 998.4747 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_077-mesh" name="concrete_04">
+          <instance_geometry url="#Mesh_077-mesh" name="concrete_04_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6323,9 +6266,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="concrete_03" name="concrete_03" type="NODE">
+        <node id="concrete_03_col" name="concrete_03_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.08212 0.8447194 5.60806e-8 3.55271e-15 140.7111 -7.10543e-15 0 0.7792574 998.4747 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_078-mesh" name="concrete_03">
+          <instance_geometry url="#Mesh_078-mesh" name="concrete_03_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6335,9 +6278,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="concrete_02" name="concrete_02" type="NODE">
+        <node id="concrete_02_col" name="concrete_02_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.08212 0.8447194 5.60806e-8 3.55271e-15 140.7111 -7.10543e-15 0 0.7792574 998.4747 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_079-mesh" name="concrete_02">
+          <instance_geometry url="#Mesh_079-mesh" name="concrete_02_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6347,9 +6290,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="concrete_01" name="concrete_01" type="NODE">
+        <node id="concrete_01_col" name="concrete_01_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.08212 0.8447194 5.60806e-8 3.55271e-15 140.7111 -7.10543e-15 0 0.7792574 998.4747 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_080-mesh" name="concrete_01">
+          <instance_geometry url="#Mesh_080-mesh" name="concrete_01_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6360,9 +6303,9 @@
           </instance_geometry>
         </node>
       </node>
-      <node id="playground_02" name="playground_02" type="NODE">
+      <node id="playground_02_col" name="playground_02_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.560821 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_076-mesh" name="playground_02">
+        <instance_geometry url="#Mesh_076-mesh" name="playground_02_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6372,9 +6315,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="playground_01" name="playground_01" type="NODE">
+      <node id="playground_01_col" name="playground_01_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.560821 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_075-mesh" name="playground_01">
+        <instance_geometry url="#Mesh_075-mesh" name="playground_01_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6384,11 +6327,11 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="stairs" name="stairs" type="NODE">
+      <node id="stairs_col" name="stairs_col" type="NODE">
         <matrix sid="transform">0.01 0 0 -0.1112845 0 0.01 4.37114e-10 0.04839828 0 -4.37114e-10 0.01 5.412723 0 0 0 1</matrix>
-        <node id="stairs_06" name="stairs_06" type="NODE">
+        <node id="stairs_06_col" name="stairs_06_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -44.95364 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 534.8023 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_069-mesh" name="stairs_06">
+          <instance_geometry url="#Mesh_069-mesh" name="stairs_06_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6398,9 +6341,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="stairs_05" name="stairs_05" type="NODE">
+        <node id="stairs_05_col" name="stairs_05_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -44.95364 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 534.8023 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_070-mesh" name="stairs_05">
+          <instance_geometry url="#Mesh_070-mesh" name="stairs_05_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6410,9 +6353,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="stairs_04" name="stairs_04" type="NODE">
+        <node id="stairs_04_col" name="stairs_04_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -44.95364 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 534.8023 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_071-mesh" name="stairs_04">
+          <instance_geometry url="#Mesh_071-mesh" name="stairs_04_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6422,9 +6365,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="stairs_03" name="stairs_03" type="NODE">
+        <node id="stairs_03_col" name="stairs_03_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -44.95364 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 534.8023 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_072-mesh" name="stairs_03">
+          <instance_geometry url="#Mesh_072-mesh" name="stairs_03_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6434,9 +6377,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="stairs_02" name="stairs_02" type="NODE">
+        <node id="stairs_02_col" name="stairs_02_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -44.95364 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 534.8023 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_073-mesh" name="stairs_02">
+          <instance_geometry url="#Mesh_073-mesh" name="stairs_02_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6446,9 +6389,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="stairs_01" name="stairs_01" type="NODE">
+        <node id="stairs_01_col" name="stairs_01_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -44.95364 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 534.8023 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_074-mesh" name="stairs_01">
+          <instance_geometry url="#Mesh_074-mesh" name="stairs_01_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6459,11 +6402,11 @@
           </instance_geometry>
         </node>
       </node>
-      <node id="step" name="step" type="NODE">
+      <node id="step_col" name="step_col" type="NODE">
         <matrix sid="transform">0.01 0 0 -0.1049535 0 0.01 4.37114e-10 0.04839806 0 -4.37114e-10 0.01 5.486811 0 0 0 1</matrix>
-        <node id="step_48" name="step_48" type="NODE">
+        <node id="step_48_col" name="step_48_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_021-mesh" name="step_48">
+          <instance_geometry url="#Mesh_021-mesh" name="step_48_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6473,9 +6416,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_47" name="step_47" type="NODE">
+        <node id="step_47_col" name="step_47_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_022-mesh" name="step_47">
+          <instance_geometry url="#Mesh_022-mesh" name="step_47_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6485,9 +6428,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_46" name="step_46" type="NODE">
+        <node id="step_46_col" name="step_46_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_023-mesh" name="step_46">
+          <instance_geometry url="#Mesh_023-mesh" name="step_46_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6497,9 +6440,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_45" name="step_45" type="NODE">
+        <node id="step_45_col" name="step_45_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_024-mesh" name="step_45">
+          <instance_geometry url="#Mesh_024-mesh" name="step_45_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6509,9 +6452,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_44" name="step_44" type="NODE">
+        <node id="step_44_col" name="step_44_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_025-mesh" name="step_44">
+          <instance_geometry url="#Mesh_025-mesh" name="step_44_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6521,9 +6464,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_43" name="step_43" type="NODE">
+        <node id="step_43_col" name="step_43_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_026-mesh" name="step_43">
+          <instance_geometry url="#Mesh_026-mesh" name="step_43_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6533,9 +6476,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_42" name="step_42" type="NODE">
+        <node id="step_42_col" name="step_42_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_027-mesh" name="step_42">
+          <instance_geometry url="#Mesh_027-mesh" name="step_42_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6545,9 +6488,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_41" name="step_41" type="NODE">
+        <node id="step_41_col" name="step_41_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_028-mesh" name="step_41">
+          <instance_geometry url="#Mesh_028-mesh" name="step_41_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6557,9 +6500,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_40" name="step_40" type="NODE">
+        <node id="step_40_col" name="step_40_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_029-mesh" name="step_40">
+          <instance_geometry url="#Mesh_029-mesh" name="step_40_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6569,9 +6512,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_39" name="step_39" type="NODE">
+        <node id="step_39_col" name="step_39_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_030-mesh" name="step_39">
+          <instance_geometry url="#Mesh_030-mesh" name="step_39_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6581,9 +6524,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_38" name="step_38" type="NODE">
+        <node id="step_38_col" name="step_38_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_031-mesh" name="step_38">
+          <instance_geometry url="#Mesh_031-mesh" name="step_38_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6593,9 +6536,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_37" name="step_37" type="NODE">
+        <node id="step_37_col" name="step_37_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_032-mesh" name="step_37">
+          <instance_geometry url="#Mesh_032-mesh" name="step_37_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6605,9 +6548,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_36" name="step_36" type="NODE">
+        <node id="step_36_col" name="step_36_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_033-mesh" name="step_36">
+          <instance_geometry url="#Mesh_033-mesh" name="step_36_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6617,9 +6560,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_35" name="step_35" type="NODE">
+        <node id="step_35_col" name="step_35_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_034-mesh" name="step_35">
+          <instance_geometry url="#Mesh_034-mesh" name="step_35_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6629,9 +6572,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_34" name="step_34" type="NODE">
+        <node id="step_34_col" name="step_34_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_035-mesh" name="step_34">
+          <instance_geometry url="#Mesh_035-mesh" name="step_34_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6641,9 +6584,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_33" name="step_33" type="NODE">
+        <node id="step_33_col" name="step_33_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_036-mesh" name="step_33">
+          <instance_geometry url="#Mesh_036-mesh" name="step_33_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6653,9 +6596,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_32" name="step_32" type="NODE">
+        <node id="step_32_col" name="step_32_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_037-mesh" name="step_32">
+          <instance_geometry url="#Mesh_037-mesh" name="step_32_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6665,9 +6608,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_31" name="step_31" type="NODE">
+        <node id="step_31_col" name="step_31_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_038-mesh" name="step_31">
+          <instance_geometry url="#Mesh_038-mesh" name="step_31_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6677,9 +6620,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_30" name="step_30" type="NODE">
+        <node id="step_30_col" name="step_30_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_039-mesh" name="step_30">
+          <instance_geometry url="#Mesh_039-mesh" name="step_30_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6689,9 +6632,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_29" name="step_29" type="NODE">
+        <node id="step_29_col" name="step_29_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_040-mesh" name="step_29">
+          <instance_geometry url="#Mesh_040-mesh" name="step_29_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6701,9 +6644,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_28" name="step_28" type="NODE">
+        <node id="step_28_col" name="step_28_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_041-mesh" name="step_28">
+          <instance_geometry url="#Mesh_041-mesh" name="step_28_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6713,9 +6656,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_27" name="step_27" type="NODE">
+        <node id="step_27_col" name="step_27_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_042-mesh" name="step_27">
+          <instance_geometry url="#Mesh_042-mesh" name="step_27_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6725,9 +6668,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_26" name="step_26" type="NODE">
+        <node id="step_26_col" name="step_26_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_043-mesh" name="step_26">
+          <instance_geometry url="#Mesh_043-mesh" name="step_26_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6737,9 +6680,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_25" name="step_25" type="NODE">
+        <node id="step_25_col" name="step_25_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_044-mesh" name="step_25">
+          <instance_geometry url="#Mesh_044-mesh" name="step_25_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6749,9 +6692,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_24" name="step_24" type="NODE">
+        <node id="step_24_col" name="step_24_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_045-mesh" name="step_24">
+          <instance_geometry url="#Mesh_045-mesh" name="step_24_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6761,9 +6704,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_23" name="step_23" type="NODE">
+        <node id="step_23_col" name="step_23_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_046-mesh" name="step_23">
+          <instance_geometry url="#Mesh_046-mesh" name="step_23_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6773,9 +6716,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_22" name="step_22" type="NODE">
+        <node id="step_22_col" name="step_22_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_047-mesh" name="step_22">
+          <instance_geometry url="#Mesh_047-mesh" name="step_22_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6785,9 +6728,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_21" name="step_21" type="NODE">
+        <node id="step_21_col" name="step_21_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_048-mesh" name="step_21">
+          <instance_geometry url="#Mesh_048-mesh" name="step_21_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6797,9 +6740,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_20" name="step_20" type="NODE">
+        <node id="step_20_col" name="step_20_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_049-mesh" name="step_20">
+          <instance_geometry url="#Mesh_049-mesh" name="step_20_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6809,9 +6752,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_19" name="step_19" type="NODE">
+        <node id="step_19_col" name="step_19_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_050-mesh" name="step_19">
+          <instance_geometry url="#Mesh_050-mesh" name="step_19_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6821,9 +6764,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_18" name="step_18" type="NODE">
+        <node id="step_18_col" name="step_18_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_051-mesh" name="step_18">
+          <instance_geometry url="#Mesh_051-mesh" name="step_18_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6833,9 +6776,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_17" name="step_17" type="NODE">
+        <node id="step_17_col" name="step_17_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_052-mesh" name="step_17">
+          <instance_geometry url="#Mesh_052-mesh" name="step_17_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6845,9 +6788,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_16" name="step_16" type="NODE">
+        <node id="step_16_col" name="step_16_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_053-mesh" name="step_16">
+          <instance_geometry url="#Mesh_053-mesh" name="step_16_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6857,9 +6800,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_15" name="step_15" type="NODE">
+        <node id="step_15_col" name="step_15_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_054-mesh" name="step_15">
+          <instance_geometry url="#Mesh_054-mesh" name="step_15_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6869,9 +6812,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_14" name="step_14" type="NODE">
+        <node id="step_14_col" name="step_14_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_055-mesh" name="step_14">
+          <instance_geometry url="#Mesh_055-mesh" name="step_14_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6881,9 +6824,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_13" name="step_13" type="NODE">
+        <node id="step_13_col" name="step_13_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_056-mesh" name="step_13">
+          <instance_geometry url="#Mesh_056-mesh" name="step_13_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6893,9 +6836,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_12" name="step_12" type="NODE">
+        <node id="step_12_col" name="step_12_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_057-mesh" name="step_12">
+          <instance_geometry url="#Mesh_057-mesh" name="step_12_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6905,9 +6848,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_11" name="step_11" type="NODE">
+        <node id="step_11_col" name="step_11_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_058-mesh" name="step_11">
+          <instance_geometry url="#Mesh_058-mesh" name="step_11_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6917,9 +6860,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_10" name="step_10" type="NODE">
+        <node id="step_10_col" name="step_10_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_059-mesh" name="step_10">
+          <instance_geometry url="#Mesh_059-mesh" name="step_10_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6929,9 +6872,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_09" name="step_09" type="NODE">
+        <node id="step_09_col" name="step_09_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_060-mesh" name="step_09">
+          <instance_geometry url="#Mesh_060-mesh" name="step_09_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6941,9 +6884,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_08" name="step_08" type="NODE">
+        <node id="step_08_col" name="step_08_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_061-mesh" name="step_08">
+          <instance_geometry url="#Mesh_061-mesh" name="step_08_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6953,9 +6896,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_07" name="step_07" type="NODE">
+        <node id="step_07_col" name="step_07_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_062-mesh" name="step_07">
+          <instance_geometry url="#Mesh_062-mesh" name="step_07_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6965,9 +6908,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_06" name="step_06" type="NODE">
+        <node id="step_06_col" name="step_06_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_063-mesh" name="step_06">
+          <instance_geometry url="#Mesh_063-mesh" name="step_06_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6977,9 +6920,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_05" name="step_05" type="NODE">
+        <node id="step_05_col" name="step_05_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_064-mesh" name="step_05">
+          <instance_geometry url="#Mesh_064-mesh" name="step_05_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -6989,9 +6932,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_04" name="step_04" type="NODE">
+        <node id="step_04_col" name="step_04_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_065-mesh" name="step_04">
+          <instance_geometry url="#Mesh_065-mesh" name="step_04_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7001,9 +6944,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_03" name="step_03" type="NODE">
+        <node id="step_03_col" name="step_03_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_066-mesh" name="step_03">
+          <instance_geometry url="#Mesh_066-mesh" name="step_03_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7013,9 +6956,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_02" name="step_02" type="NODE">
+        <node id="step_02_col" name="step_02_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_067-mesh" name="step_02">
+          <instance_geometry url="#Mesh_067-mesh" name="step_02_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7025,9 +6968,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="step_01" name="step_01" type="NODE">
+        <node id="step_01_col" name="step_01_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -45.58673 0.8447194 5.60806e-8 3.55271e-15 135.8712 -7.10543e-15 0 0.7792574 527.3934 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_068-mesh" name="step_01">
+          <instance_geometry url="#Mesh_068-mesh" name="step_01_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7038,9 +6981,9 @@
           </instance_geometry>
         </node>
       </node>
-      <node id="awning" name="awning" type="NODE">
+      <node id="awning_col" name="awning_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608209 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_020-mesh" name="awning">
+        <instance_geometry url="#Mesh_020-mesh" name="awning_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7050,9 +6993,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="military_box_02" name="military box_02" type="NODE">
+      <node id="military_box_02_col" name="military box_02_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608214 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_019-mesh" name="military box_02">
+        <instance_geometry url="#Mesh_019-mesh" name="military box_02_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7064,9 +7007,9 @@
       </node>
       <node id="board" name="board" type="NODE">
         <matrix sid="transform">0.01 0 0 0.004353561 0 0.01 4.37114e-10 0.06386993 0 -4.37114e-10 0.01 10.27889 0 0 0 1</matrix>
-        <node id="board_16" name="board_16" type="NODE">
+        <node id="board_16_col" name="board_16_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_003-mesh" name="board_16">
+          <instance_geometry url="#Mesh_003-mesh" name="board_16_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7076,9 +7019,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_15" name="board_15" type="NODE">
+        <node id="board_15_col" name="board_15_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_004-mesh" name="board_15">
+          <instance_geometry url="#Mesh_004-mesh" name="board_15_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7088,9 +7031,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_14" name="board_14" type="NODE">
+        <node id="board_14_col" name="board_14_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_005-mesh" name="board_14">
+          <instance_geometry url="#Mesh_005-mesh" name="board_14_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7100,9 +7043,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_13" name="board_13" type="NODE">
+        <node id="board_13_col" name="board_13_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_006-mesh" name="board_13">
+          <instance_geometry url="#Mesh_006-mesh" name="board_13_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7112,9 +7055,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_12" name="board_12" type="NODE">
+        <node id="board_12_col" name="board_12_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_007-mesh" name="board_12">
+          <instance_geometry url="#Mesh_007-mesh" name="board_12_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7124,9 +7067,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_11" name="board_11" type="NODE">
+        <node id="board_11_col" name="board_11_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_008-mesh" name="board_11">
+          <instance_geometry url="#Mesh_008-mesh" name="board_11_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7136,9 +7079,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_10" name="board_10" type="NODE">
+        <node id="board_10_col" name="board_10_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_009-mesh" name="board_10">
+          <instance_geometry url="#Mesh_009-mesh" name="board_10_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7148,9 +7091,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_09" name="board_09" type="NODE">
+        <node id="board_09_col" name="board_09_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_010-mesh" name="board_09">
+          <instance_geometry url="#Mesh_010-mesh" name="board_09_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7160,9 +7103,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_08" name="board_08" type="NODE">
+        <node id="board_08_col" name="board_08_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_011-mesh" name="board_08">
+          <instance_geometry url="#Mesh_011-mesh" name="board_08_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7172,9 +7115,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_07" name="board_07" type="NODE">
+        <node id="board_07_col" name="board_07_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_012-mesh" name="board_07">
+          <instance_geometry url="#Mesh_012-mesh" name="board_07_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7184,9 +7127,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_06" name="board_06" type="NODE">
+        <node id="board_06_col" name="board_06_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_013-mesh" name="board_06">
+          <instance_geometry url="#Mesh_013-mesh" name="board_06_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7196,9 +7139,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_05" name="board_05" type="NODE">
+        <node id="board_05_col" name="board_05_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_014-mesh" name="board_05">
+          <instance_geometry url="#Mesh_014-mesh" name="board_05_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7208,9 +7151,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_04" name="board_04" type="NODE">
+        <node id="board_04_col" name="board_04_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_015-mesh" name="board_04">
+          <instance_geometry url="#Mesh_015-mesh" name="board_04_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7220,9 +7163,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_03" name="board_03" type="NODE">
+        <node id="board_03_col" name="board_03_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_016-mesh" name="board_03">
+          <instance_geometry url="#Mesh_016-mesh" name="board_03_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7232,9 +7175,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_02" name="board_02" type="NODE">
+        <node id="board_02_col" name="board_02_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_017-mesh" name="board_02">
+          <instance_geometry url="#Mesh_017-mesh" name="board_02_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7244,9 +7187,9 @@
             </bind_material>
           </instance_geometry>
         </node>
-        <node id="board_01" name="board_01" type="NODE">
+        <node id="board_01_col" name="board_01_col" type="NODE">
           <matrix sid="transform">6.37745e-8 -0.74281 0 -56.51744 0.8447194 5.60806e-8 3.55271e-15 134.3241 -7.10543e-15 0 0.7792574 48.18568 0 0 0 1</matrix>
-          <instance_geometry url="#Mesh_018-mesh" name="board_01">
+          <instance_geometry url="#Mesh_018-mesh" name="board_01_col">
             <bind_material>
               <technique_common>
                 <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7269,9 +7212,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="military_box_01" name="military box_01" type="NODE">
+      <node id="military_box_01_col" name="military box_01_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608213 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh_001-mesh" name="military box_01">
+        <instance_geometry url="#Mesh_001-mesh" name="military box_01_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7281,9 +7224,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="military_searchlight" name="military searchlight" type="NODE">
+      <node id="military_searchlight_col" name="military searchlight_col" type="NODE">
         <matrix sid="transform">6.37745e-10 -0.007428099 0 -0.5608213 0.008447194 5.60806e-10 3.40624e-10 1.407111 -3.69239e-10 0 0.007792573 10.76075 0 0 0 1</matrix>
-        <instance_geometry url="#Mesh-mesh" name="military searchlight">
+        <instance_geometry url="#Mesh-mesh" name="military searchlight_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Material__0-material" target="#Material__0-material">
@@ -7292,14 +7235,6 @@
             </technique_common>
           </bind_material>
         </instance_geometry>
-      </node>
-      <node id="Camera" name="Camera" type="NODE">
-        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
-        <instance_camera url="#Camera-camera"/>
-      </node>
-      <node id="Light" name="Light" type="NODE">
-        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
-        <instance_light url="#Light-light"/>
       </node>
     </visual_scene>
   </library_visual_scenes>

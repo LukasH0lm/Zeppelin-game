@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.1.1 commit date:2024-04-15, commit time:15:11, hash:e1743a0317bc</authoring_tool>
     </contributor>
-    <created>2024-05-07T11:54:14</created>
-    <modified>2024-05-07T11:54:14</modified>
+    <created>2024-05-20T13:22:08</created>
+    <modified>2024-05-20T13:22:08</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -293,9 +293,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="plane" name="plane" type="NODE">
+      <node id="plane_col" name="plane_col" type="NODE">
         <matrix sid="transform">0.01 0 0 0 0 0.009588295 0.002839824 -0.07930589 0 -0.002839824 0.009588295 0.7631968 0 0 0 1</matrix>
-        <instance_geometry url="#plane-mesh" name="plane">
+        <instance_geometry url="#plane-mesh" name="plane_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="base-material" target="#base-material">

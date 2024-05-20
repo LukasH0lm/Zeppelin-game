@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.1.1 commit date:2024-04-15, commit time:15:11, hash:e1743a0317bc</authoring_tool>
     </contributor>
-    <created>2024-05-13T15:35:11</created>
-    <modified>2024-05-13T15:35:11</modified>
+    <created>2024-05-20T13:38:25</created>
+    <modified>2024-05-20T13:38:25</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -1530,9 +1530,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Top_Bit" name="Top Bit" type="NODE">
+      <node id="Top_Bit_col" name="Top Bit_col" type="NODE">
         <matrix sid="transform">1.88745e-8 3 4.07302e-8 -0.3745808 -0.25 2.26494e-7 3.07504e-15 -7.345354 0 -4.88762e-7 0.25 3.75709 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_002-mesh" name="Top Bit">
+        <instance_geometry url="#Cube_002-mesh" name="Top Bit_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Roof-material" target="#Roof-material">
@@ -1566,9 +1566,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Door_Bit" name="Door Bit" type="NODE">
+      <node id="Door_Bit_col" name="Door Bit_col" type="NODE">
         <matrix sid="transform">3.77489e-9 3 3.25841e-7 -0.3745808 -0.05 2.26494e-7 2.46003e-14 -7.604357 0 -4.88762e-7 2 2 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_003-mesh" name="Door Bit">
+        <instance_geometry url="#Cube_003-mesh" name="Door Bit_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Roof-material" target="#Roof-material">
@@ -1578,9 +1578,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Floor" name="Floor" type="NODE">
+      <node id="Floor_col" name="Floor_col" type="NODE">
         <matrix sid="transform">1.028402 0 0 0 0 1.018532 0 0 0 0 1.021107 -0.00252068 0 0 0 1</matrix>
-        <instance_geometry url="#Plane_001-mesh" name="Floor">
+        <instance_geometry url="#Plane_001-mesh" name="Floor_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Floor-material" target="#Floor-material">
@@ -1590,9 +1590,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Roof" name="Roof" type="NODE">
+      <node id="Roof_col" name="Roof_col" type="NODE">
         <matrix sid="transform">5.15 0 0 0 0 7.716523 0 0 0 0 0.05 5.01 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_019-mesh" name="Roof">
+        <instance_geometry url="#Cube_019-mesh" name="Roof_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Roof-material" target="#Roof-material">
@@ -1650,9 +1650,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Vertical_Supports" name="Vertical Supports" type="NODE">
+      <node id="Vertical_Supports_col" name="Vertical Supports_col" type="NODE">
         <matrix sid="transform">1 0 0 5 0 1 0 3 0 0 1 2.5 0 0 0 1</matrix>
-        <instance_geometry url="#Cube_014-mesh" name="Vertical Supports">
+        <instance_geometry url="#Cube_014-mesh" name="Vertical Supports_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Steel-material" target="#Steel-material">
@@ -1662,9 +1662,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Wall_R" name="Wall_R" type="NODE">
+      <node id="Wall_R_col" name="Wall_R_col" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#Plane_002-mesh" name="Wall_R">
+        <instance_geometry url="#Plane_002-mesh" name="Wall_R_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Corrugated_Metal-material" target="#Corrugated_Metal-material">
@@ -1674,9 +1674,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Wall_L" name="Wall_L" type="NODE">
+      <node id="Wall_L_col" name="Wall_L_col" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#Plane_004-mesh" name="Wall_L">
+        <instance_geometry url="#Plane_004-mesh" name="Wall_L_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Corrugated_Metal-material" target="#Corrugated_Metal-material">
@@ -1686,9 +1686,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Wall_F" name="Wall_F" type="NODE">
+      <node id="Wall_F_col" name="Wall_F_col" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#Plane_005-mesh" name="Wall_F">
+        <instance_geometry url="#Plane_005-mesh" name="Wall_F_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Corrugated_Metal-material" target="#Corrugated_Metal-material">
@@ -1698,9 +1698,9 @@
           </bind_material>
         </instance_geometry>
       </node>
-      <node id="Wall_B" name="Wall_B" type="NODE">
+      <node id="Wall_B_col" name="Wall_B_col" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#Plane_003-mesh" name="Wall_B">
+        <instance_geometry url="#Plane_003-mesh" name="Wall_B_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Corrugated_Metal-material" target="#Corrugated_Metal-material">

@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.1.1 commit date:2024-04-15, commit time:15:11, hash:e1743a0317bc</authoring_tool>
     </contributor>
-    <created>2024-05-07T11:51:50</created>
-    <modified>2024-05-07T11:51:50</modified>
+    <created>2024-05-20T13:20:16</created>
+    <modified>2024-05-20T13:20:16</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -81,9 +81,9 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="Farm_Shed_01" name="Farm Shed 01" type="NODE">
+      <node id="Farm_Shed_01_col" name="Farm Shed 01_col" type="NODE">
         <matrix sid="transform">4.092852 0 0 0.03928757 0 2.638639 0 2.722627 0 0 1.968254 4.76837e-7 0 0 0 1</matrix>
-        <instance_geometry url="#Component_4_001-mesh" name="Farm Shed 01">
+        <instance_geometry url="#Component_4_001-mesh" name="Farm Shed 01_col">
           <bind_material>
             <technique_common>
               <instance_material symbol="Farm_Shed_01-material" target="#Farm_Shed_01-material">
