@@ -698,6 +698,9 @@ transform = Transform3D(-0.00518645, -0.853342, -0.521326, -0.00848911, 0.521352
 [node name="polaroid4" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
 transform = Transform3D(0.0613794, 0, 0.998115, 0, 1, 0, -0.998115, 0, 0.0613794, -3.9123, 0.623212, -62.3164)
 
+[node name="polaroid5" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -458.491, 0.2, 96.632)
+
 [node name="medium house" parent="." instance=ExtResource("36_badvj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -580.324, -0.214775, 28.6174)
 
@@ -998,4 +1001,6 @@ transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -578.447,
 [node name="Barrel9" parent="." instance=ExtResource("54_5kgk6")]
 transform = Transform3D(0.330057, 0, 0, 0, 0.0519296, -0.284141, 0, 0.237394, 0.0621554, -578.035, 0.290499, -66.2553)
 
-[connection signal="book_clicked" from="player" to="PhotoBook" method="showphoto"]
+[connection signal="book_clicked" from="player" to="PhotoBook" method="unlockphoto"]
+[connection signal="flip_left" from="player" to="PhotoBook" method="flip_page_left"]
+[connection signal="flip_right" from="player" to="PhotoBook" method="flip_page_right"]

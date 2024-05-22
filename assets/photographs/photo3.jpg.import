@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ge571k2andgb"
-path="res://.godot/imported/AE_Tondern_004.jpg-10a6408755008df14821436e13965529.ctex"
+uid="uid://dl3abakodscl4"
+path="res://.godot/imported/photo3.jpg-c3ffb8b60a2d71eb9ffe61a1a066ae9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/photographs/AE_Tondern_004.jpg"
-dest_files=["res://.godot/imported/AE_Tondern_004.jpg-10a6408755008df14821436e13965529.ctex"]
+source_file="res://assets/photographs/photo3.jpg"
+dest_files=["res://.godot/imported/photo3.jpg-c3ffb8b60a2d71eb9ffe61a1a066ae9b.ctex"]
 
 [params]
 

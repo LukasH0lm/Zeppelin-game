@@ -27,6 +27,8 @@ const RAY_LENGTH = 2
 
 # Define custom signals
 signal book_clicked
+signal flip_left
+signal flip_right
 
 # Node References
 @onready var parts: Dictionary = {
@@ -59,6 +61,8 @@ func _physics_process(delta: float) -> void:
 		move_character(delta)
 
 func _input(event: InputEvent) -> void:
+	
+
 	if !Global.is_in_dialogue:
 		if event is InputEventMouseMotion:
 			handle_mouse_movement(event)
@@ -69,7 +73,17 @@ func _input(event: InputEvent) -> void:
 			print(get_parent().get_child(0).name)
 			var photobook = get_parent().get_child(0)
 			photobook.visible = !photobook.visible
-			
+		if event is InputEventKey and event.as_text_key_label() == "Left" and event.is_pressed():
+			print("flip left")
+			var photobook = get_parent().get_child(0)
+			if photobook.visible == true:
+				emit_signal("flip_left")
+		
+		if event is InputEventKey and event.as_text_key_label() == "Right" and event.is_pressed():
+			print("flip right")
+			var photobook = get_parent().get_child(0)
+			if photobook.visible == true:
+				emit_signal("flip_right")
 	
 	
 

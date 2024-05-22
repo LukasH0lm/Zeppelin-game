@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://3n8o4xab0ygw"]
+[gd_scene load_steps=8 format=3 uid="uid://3n8o4xab0ygw"]
 
-[ext_resource type="Script" path="res://PhotoBook.gd" id="1_o1nao"]
+[ext_resource type="Script" path="res://photobook.gd" id="1_o1nao"]
 [ext_resource type="Texture2D" uid="uid://5231gdffsya7" path="res://assets/textures/old_paper.jpg" id="2_ghup6"]
-[ext_resource type="Texture2D" uid="uid://ge571k2andgb" path="res://assets/photographs/AE_Tondern_004.jpg" id="2_qqb2t"]
-[ext_resource type="Texture2D" uid="uid://cnmhjpq1kwxt1" path="res://assets/photographs/AE_Tondern_010.jpg" id="3_y2nt3"]
-[ext_resource type="Texture2D" uid="uid://dl3abakodscl4" path="res://assets/photographs/AE_Tondern_041.jpg" id="4_3xltf"]
-[ext_resource type="Texture2D" uid="uid://cyl25yja7qy84" path="res://assets/photographs/AE_Tondern_047.jpg" id="5_6hg0n"]
+[ext_resource type="Texture2D" uid="uid://ge571k2andgb" path="res://assets/photographs/photo1.jpg" id="2_qqb2t"]
+[ext_resource type="Texture2D" uid="uid://cnmhjpq1kwxt1" path="res://assets/photographs/photo2.jpg" id="3_y2nt3"]
+[ext_resource type="Texture2D" uid="uid://dl3abakodscl4" path="res://assets/photographs/photo3.jpg" id="4_3xltf"]
+[ext_resource type="Texture2D" uid="uid://cyl25yja7qy84" path="res://assets/photographs/photo4.jpg" id="5_6hg0n"]
+[ext_resource type="Texture2D" uid="uid://cnf3bxa8flx7" path="res://assets/photographs/photo5.jpg" id="7_w6nym"]
 
 [node name="PhotoBook" type="Control"]
 layout_mode = 3
@@ -56,3 +57,9 @@ position = Vector2(175, 119)
 position = Vector2(1415, 708)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_6hg0n")
+
+[node name="photo5" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="photo5"]
+position = Vector2(989, 562)
+texture = ExtResource("7_w6nym")
