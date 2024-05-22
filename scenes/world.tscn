@@ -259,235 +259,241 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 transform = Transform3D(0.880014, 0.0768489, -0.468689, 0.0799584, 0.948766, 0.305696, 0.468168, -0.306492, 0.828783, -593.605, 174.597, 373.097)
 fov = 49.9282
 
-[node name="Soldier" type="CharacterBody3D" parent="." groups=["npcs"]]
+[node name="SoldatNPC" type="Node3D" parent="."]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -468.707, 1.05485, 82.4837)
+
+[node name="Soldier" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
 script = ExtResource("13_kqvng")
 
-[node name="LeaderSoldier" parent="Soldier" instance=ExtResource("14_xbokx")]
+[node name="LeaderSoldier" parent="SoldatNPC/Soldier" instance=ExtResource("14_xbokx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -101.177, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="Soldier6" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -547.164, 1.05485, 65.989)
+[node name="Soldier2" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3401.2, 0, -1337.46)
 script = ExtResource("13_kqvng")
 
-[node name="officer" parent="Soldier6" instance=ExtResource("15_e53rk")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier2"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 2.08067, -1.55273)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="SoldatNPC/Soldier2" instance=ExtResource("15_acmh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -106.468, 0)
+
+[node name="Soldier3" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -449.504, 0, -352.165)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier3"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -108.59, 8.62531, -48.6807)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="SoldatNPC/Soldier3" instance=ExtResource("16_56noi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.531, -104.319, -76.7393)
+
+[node name="Soldier4" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(-0.64078, 0, 0.767724, 0, 1, 0, -0.767724, 0, -0.64078, -6225.14, 1.21909, -18120.8)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier4"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 2.08067, -1.55273)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="SoldatNPC/Soldier4" instance=ExtResource("15_acmh1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -106.468, 0)
+
+[node name="Soldier5" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(0.0520157, 0.152624, -0.986915, -0.00803293, 0.988284, 0.152412, 0.998614, 0, 0.0526323, -22050.4, 0, -6444.67)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier5"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -108.59, 8.62531, -48.6807)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="moreanimationtest" parent="SoldatNPC/Soldier5" instance=ExtResource("16_56noi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.531, -104.319, -76.7393)
+
+[node name="Soldier6" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7845.7, 0, -1649.47)
+script = ExtResource("13_kqvng")
+
+[node name="officer" parent="SoldatNPC/Soldier6" instance=ExtResource("15_e53rk")]
 transform = Transform3D(12027.8, 0, 0, 0, 11814.7, 0, 0, 0, 16180.6, 2.88672, -100.094, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier6"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier6"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="Soldier7" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(-0.00618044, 0, 0.00276946, 0, 0.00811451, 0, -0.00246987, 0, -0.0069301, -483.024, 0.818594, 41.1257)
+[node name="Soldier7" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(-0.618044, 0, 0.276946, 0, 0.811451, 0, -0.246987, 0, -0.69301, -1431.7, -23.6256, -4135.8)
 script = ExtResource("13_kqvng")
 
-[node name="officer" parent="Soldier7" instance=ExtResource("16_nf581")]
+[node name="officer" parent="SoldatNPC/Soldier7" instance=ExtResource("16_nf581")]
 transform = Transform3D(14652.5, 0, 0, 0, 14130.8, 0, 0, 0, 11690.3, 0, -101.818, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier7"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier7"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="Soldier8" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.00663939, 0, -0.00747787, 0, 0.01, 0, 0.00747787, 0, 0.00663939, -595.732, 1.05485, 57.3652)
+[node name="Soldier8" type="CharacterBody3D" parent="SoldatNPC" groups=["npcs"]]
+transform = Transform3D(0.663939, 0, -0.747787, 0, 1, 0, 0.747787, 0, 0.663939, -12702.5, 0, -2511.85)
 script = ExtResource("13_kqvng")
 
-[node name="officer" parent="Soldier8" instance=ExtResource("17_mp7us")]
+[node name="officer" parent="SoldatNPC/Soldier8" instance=ExtResource("17_mp7us")]
 transform = Transform3D(12664.3, 0, 0, 0, 11769.5, 0, 0, 0, 9319.04, 0, -100.805, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier8"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SoldatNPC/Soldier8"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="SittingWorker" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -482.748, 0.692325, 37.8707)
-script = ExtResource("13_kqvng")
+[node name="EkstraNPC" type="Node3D" parent="."]
 
-[node name="WorkerNPC" parent="SittingWorker" instance=ExtResource("18_oujb2")]
-transform = Transform3D(101.443, 0, 0, 0, 109.892, 0, 0, 0, 154.147, 0, -69.7838, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SittingWorker"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
-shape = SubResource("BoxShape3D_e0mah")
-
-[node name="Pilot" type="CharacterBody3D" parent="." groups=["npcs"]]
+[node name="Pilot" type="CharacterBody3D" parent="EkstraNPC" groups=["npcs"]]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.053, 1.04261, 84.7384)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Pilot"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EkstraNPC/Pilot"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -24189.5, -0.45002, -6603.95)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="Sketchfab_Scene" parent="Pilot" instance=ExtResource("15_x44ul")]
+[node name="Sketchfab_Scene" parent="EkstraNPC/Pilot" instance=ExtResource("15_x44ul")]
 transform = Transform3D(-3.41694, 0, -77.4938, 0, 61.2912, 0, 76.6941, 0, -3.45257, -24194.4, -103.764, -6599.44)
 
-[node name="Soldier2" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -434.695, 1.05485, 69.1091)
-script = ExtResource("13_kqvng")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier2"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 2.08067, -1.55273)
-shape = SubResource("BoxShape3D_e0mah")
-
-[node name="moreanimationtest" parent="Soldier2" instance=ExtResource("15_acmh1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -106.468, 0)
-
-[node name="Soldier4" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.00557281, 0, 0.00830324, 0, 0.01, 0, -0.00830324, 0, 0.00557281, -496.775, 1.26898, -115.283)
-script = ExtResource("13_kqvng")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier4"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 2.08067, -1.55273)
-shape = SubResource("BoxShape3D_e0mah")
-
-[node name="moreanimationtest" parent="Soldier4" instance=ExtResource("15_acmh1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -106.468, 0)
-
-[node name="Soldier3" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -470.707, 1.05485, 82.4837)
-script = ExtResource("13_kqvng")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier3"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -108.59, 8.62531, -48.6807)
-shape = SubResource("BoxShape3D_e0mah")
-
-[node name="moreanimationtest" parent="Soldier3" instance=ExtResource("16_56noi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.531, -104.319, -76.7393)
-
-[node name="Soldier5" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.000520157, 0.00152624, -0.00986915, -8.03293e-05, 0.00988284, 0.00152412, 0.00998614, 0, 0.000526323, -689.211, 1.05485, 18.037)
-script = ExtResource("13_kqvng")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Soldier5"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -108.59, 8.62531, -48.6807)
-shape = SubResource("BoxShape3D_e0mah")
-
-[node name="moreanimationtest" parent="Soldier5" instance=ExtResource("16_56noi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.531, -104.319, -76.7393)
-
-[node name="WatchTowerSoldier" type="CharacterBody3D" parent="." groups=["npcs"]]
+[node name="WatchTowerSoldier" type="CharacterBody3D" parent="EkstraNPC" groups=["npcs"]]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -617.504, 10.8982, 151.517)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EkstraNPC/WatchTowerSoldier"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="moreanimationtest" parent="WatchTowerSoldier" instance=ExtResource("17_naebf")]
+[node name="moreanimationtest" parent="EkstraNPC/WatchTowerSoldier" instance=ExtResource("17_naebf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
 
-[node name="WatchTowerSoldier2" type="CharacterBody3D" parent="." groups=["npcs"]]
+[node name="WatchTowerSoldier2" type="CharacterBody3D" parent="EkstraNPC" groups=["npcs"]]
 transform = Transform3D(0.00195262, 0, 0.00980751, 0, 0.01, 0, -0.00980751, 0, 0.00195262, -358.054, 10.8906, 147.626)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EkstraNPC/WatchTowerSoldier2"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="moreanimationtest" parent="WatchTowerSoldier2" instance=ExtResource("17_naebf")]
+[node name="moreanimationtest" parent="EkstraNPC/WatchTowerSoldier2" instance=ExtResource("17_naebf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
 
-[node name="WatchTowerSoldier3" type="CharacterBody3D" parent="." groups=["npcs"]]
+[node name="WatchTowerSoldier3" type="CharacterBody3D" parent="EkstraNPC" groups=["npcs"]]
 transform = Transform3D(0.00195262, 0, 0.00980751, 0, 0.01, 0, -0.00980751, 0, 0.00195262, -357.433, 10.8906, -142.12)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier3"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EkstraNPC/WatchTowerSoldier3"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="moreanimationtest" parent="WatchTowerSoldier3" instance=ExtResource("17_naebf")]
+[node name="moreanimationtest" parent="EkstraNPC/WatchTowerSoldier3" instance=ExtResource("17_naebf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
 
-[node name="WatchTowerSoldier4" type="CharacterBody3D" parent="." groups=["npcs"]]
+[node name="WatchTowerSoldier4" type="CharacterBody3D" parent="EkstraNPC" groups=["npcs"]]
 transform = Transform3D(-0.00236804, 0, -0.00971557, 0, 0.01, 0, 0.00971557, 0, -0.00236804, -621.805, 10.8906, -138.138)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WatchTowerSoldier4"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EkstraNPC/WatchTowerSoldier4"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -187.859, -8.35492, 8.34668)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="moreanimationtest" parent="WatchTowerSoldier4" instance=ExtResource("17_naebf")]
+[node name="moreanimationtest" parent="EkstraNPC/WatchTowerSoldier4" instance=ExtResource("17_naebf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -189.84, -104.44, 0)
 
-[node name="Worker" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -556.471, 1.04106, 82.1456)
+[node name="WorkersNpc" type="Node3D" parent="."]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -482.748, 0.692325, 37.8707)
+
+[node name="SittingWorker" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker"]
+[node name="WorkerNPC" parent="WorkersNpc/SittingWorker" instance=ExtResource("18_oujb2")]
+transform = Transform3D(101.443, 0, 0, 0, 109.892, 0, 0, 0, 154.147, 0, -69.7838, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/SittingWorker"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -0.109375, 13.8062, 0)
+shape = SubResource("BoxShape3D_e0mah")
+
+[node name="Worker" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(0.696777, 0, -0.717288, 0, 1, 0, 0.717288, 0, 0.696777, -6544.59, 34.8735, -79.0771)
+script = ExtResource("13_kqvng")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -4.13672, -42.7977, 55.0107)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker" instance=ExtResource("15_f3p5i")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker" instance=ExtResource("15_f3p5i")]
 transform = Transform3D(-119.256, 0, 59.4499, 0, 110.419, 0, -46.3089, 0, -153.097, -15.0898, -103.859, 66.1602)
 
-[node name="Worker2" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.000821473, 0, -0.0099662, 0, 0.01, 0, 0.0099662, 0, 0.000821473, -558.505, 1.90499, 45.3291)
+[node name="Worker2" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(0.0821473, 0, -0.99662, 0, 1, 0, 0.99662, 0, 0.0821473, -7575.7, 121.266, 745.84)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker2"]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -4.14063, -154.587, 200.06)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker2" instance=ExtResource("21_atp43")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker2" instance=ExtResource("21_atp43")]
 transform = Transform3D(92.4464, 0, 0, 0, 146.661, 0, 0, 0, 116.125, 0, -192.216, 187.685)
 
-[node name="Worker3" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.00919924, 0, -0.00392096, 0, 0.01, 0, 0.00392096, 0, 0.00919924, -701.421, 1.1272, 29.5986)
+[node name="Worker3" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(0.919924, 0, -0.392096, 0, 1, 0, 0.392096, 0, 0.919924, -21867.3, 43.4875, -827.21)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker3"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker3"]
 transform = Transform3D(100, 0, 0.000509262, 0, 100, 0, -0.000509262, 0, 100, -8.125, -32.5232, 85.6328)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker3" instance=ExtResource("16_j5umv")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker3" instance=ExtResource("16_j5umv")]
 transform = Transform3D(-101.917, 0, 36.3169, 0, 115.285, 0, -46.2895, 0, -79.9602, -10.3867, -111.615, 88.9629)
 
-[node name="Worker4" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.00816254, 6.41081e-11, -0.00575128, 0.000108462, 0.00867225, 0.000153767, 0.0057534, -0.000163487, 0.00815665, -548.188, 0.92649, 66.1143)
+[node name="Worker4" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(0.816254, 6.41081e-09, -0.575128, 0.0108462, 0.867225, 0.0153767, 0.57534, -0.0163487, 0.815665, -6544, 23.4165, 2824.36)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker4"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker4"]
 transform = Transform3D(100, 0, 0.000509262, 0, 100, 0, -0.000509262, 0, 100, 12.5938, 15.7355, 74.3926)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker4" instance=ExtResource("17_gp25a")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker4" instance=ExtResource("17_gp25a")]
 transform = Transform3D(-121.028, 0, 46.0906, 0, 131.704, 0, -58.4704, 0, -95.4027, 11.9258, -108.408, 77.8184)
 
-[node name="Worker6" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.00225971, 0, -0.00974134, 0, 0.01, 0, 0.00974134, 0, 0.00225971, -636.656, 1.12072, 27.7505)
+[node name="Worker6" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(0.225971, 0, -0.974134, 0, 1, 0, 0.974134, 0, 0.225971, -15390.8, 42.8395, -1012.02)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker6"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker6"]
 transform = Transform3D(100, 0, 0.000509262, 0, 100, 0, -0.000509262, 0, 100, -36.8789, -26.2597, 125.811)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker6" instance=ExtResource("18_2w42j")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker6" instance=ExtResource("18_2w42j")]
 transform = Transform3D(131.237, 0, -9.15527e-05, 0, 134.319, 0, -0.000125885, 0, -83.9688, -45.8516, -102.793, 138.87)
 
-[node name="Worker7" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(-0.00949579, 0, -0.00313528, 0, 0.01, 0, 0.00313528, 0, -0.00949579, -630.268, 0.866482, 64.5734)
+[node name="Worker7" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(-0.949579, 0, -0.313528, 0, 1, 0, 0.313528, 0, -0.949579, -14752, 17.4157, 2670.27)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker7"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker7"]
 transform = Transform3D(100, 0, 0.000509262, 0, 100, 0, -0.000509262, 0, 100, 8.79688, 45.7912, 20.4258)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker7" instance=ExtResource("19_f6x2u")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker7" instance=ExtResource("19_f6x2u")]
 transform = Transform3D(-83.6316, 0, 43.5743, 0, 133.806, 0, -23.0202, 0, -158.304, 4.06641, -86.702, 29.5371)
 
-[node name="Worker9" type="CharacterBody3D" parent="." groups=["npcs"]]
-transform = Transform3D(0.00996208, 0, 0.000869992, 0, 0.01, 0, -0.000869992, 0, 0.00996208, -617.871, 0.0407608, 146.903)
+[node name="Worker9" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
+transform = Transform3D(0.996208, 0, 0.0869992, 0, 1, 0, -0.0869992, 0, 0.996208, -13512.3, -65.1564, 10903.2)
 script = ExtResource("13_kqvng")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Worker9"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker9"]
 transform = Transform3D(100, 0, -9.53674e-07, 0, 100, 0, 9.53674e-07, 0, 100, -9.68359, 92.9154, 0.731934)
 shape = SubResource("BoxShape3D_e0mah")
 
-[node name="WorkerNPC" parent="Worker9" instance=ExtResource("15_f3p5i")]
+[node name="WorkerNPC" parent="WorkersNpc/Worker9" instance=ExtResource("15_f3p5i")]
 transform = Transform3D(114.623, 0, 8.2016e-05, 0, 139.462, 0, -8.39233e-05, 0, 67.404, 0, 0, 0)
 
 [node name="Tobias" parent="." instance=ExtResource("15_qj725")]
@@ -681,16 +687,16 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -627.7
 [node name="Polaroids" type="Node3D" parent="."]
 
 [node name="polaroid1" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -462.296, 0, 94.3887)
+transform = Transform3D(0.045363, 0, 0.998971, 0, 1, 0, -0.998971, 0, 0.045363, -470.742, 0.65645, 63.0598)
 
 [node name="polaroid2" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -463.431, 0.00254023, 94.3651)
+transform = Transform3D(-0.0480249, 0.673038, 0.738047, 0.0437024, 0.739608, -0.671618, -0.99789, 0, -0.064933, -550.355, 0.204251, -86.0416)
 
 [node name="polaroid3" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -464.693, 0.00254023, 94.3416)
+transform = Transform3D(-0.00518645, -0.853342, -0.521326, -0.00848911, 0.521352, -0.853299, 0.999951, 3.38862e-10, -0.00994808, -701.397, 0.2435, 17.7258)
 
 [node name="polaroid4" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -465.947, 0.00254023, 94.3667)
+transform = Transform3D(0.0613794, 0, 0.998115, 0, 1, 0, -0.998115, 0, 0.0613794, -3.9123, 0.623212, -62.3164)
 
 [node name="medium house" parent="." instance=ExtResource("36_badvj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -580.324, -0.214775, 28.6174)

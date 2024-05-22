@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dfmu0opmtyuf"
+path="res://.godot/imported/Soldier2.dialogue-5fbd2168483dfd48d7e063b7b160e51e.tres"
+
+[deps]
+
+source_file="res://dialogue/Soldier2.dialogue"
+dest_files=["res://.godot/imported/Soldier2.dialogue-5fbd2168483dfd48d7e063b7b160e51e.tres"]
+
+[params]
+
+defaults=true

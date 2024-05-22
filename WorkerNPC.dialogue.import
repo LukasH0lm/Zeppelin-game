@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://llcetfsy0fug"
+path="res://.godot/imported/WorkerNPC.dialogue-533693fdbd86a6af06ac39c83a551cea.tres"
+
+[deps]
+
+source_file="res://WorkerNPC.dialogue"
+dest_files=["res://.godot/imported/WorkerNPC.dialogue-533693fdbd86a6af06ac39c83a551cea.tres"]
+
+[params]
+
+defaults=true

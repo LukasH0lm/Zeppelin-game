@@ -1,13 +1,16 @@
 ~ this_is_a_node_title
 
-Soldat: [[Hej|Hejsa|Hvad så?]], Jeg er en soldat.
-Soldat: Er du en soldat?
-- ja
-	Soldat: Sejt nok
-- nej
-	Soldat: Ikke sejt nok
-- Hej => this_is_a_node_title
-- Farvel => END
-Soldat: Vi ses bro
+Soldat: [[Hej|Hejsa|Hvad så?]], Jeg er en Oberst her på zeppelin basen.
+Oberst: har du fået fundet allede de billedere der ligger rundt på Basen enu?
+- ja 
+	Oberst: godt klaret, jeg viste det var den rigtige opgave for dig. 
+- nej 
+	Oberst: så må du lede videre, de billedere skal findes!. 
+- hvilke billedere?? 
+	Oberst: Jeg har mistet nogle billeder fra basen som du skal finde til mig.
+	Oberst: Billederen burde ligge rundt omkring på basen.
+	Oberst: hvis du har svært ved at finde Billederene kan du spørgere nogle af andre folk her på base 
+- Farvel => END 
+Oberst: Jeg Regner med at du har fundet dem alle inden dagen er omme.
 
 => END

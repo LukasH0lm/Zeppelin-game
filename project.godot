@@ -83,4 +83,4 @@ move_crouch={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue/HelloWorld.dialogue", "res://dialogue/Soldier.dialogue", "res://dialogue/OldSoldier.dialogue", "res://dialogue/Worker.dialogue", "res://dialogue/CamoSoldier.dialogue", "res://dialogue/PilotSoldier.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue/HelloWorld.dialogue", "res://dialogue/Soldier.dialogue", "res://dialogue/Worker.dialogue", "res://dialogue/PilotSoldier.dialogue", "res://WorkerNPC.dialogue", "res://dialogue/Soldier2.dialogue", "res://dialogue/Soldier3.dialogue", "res://dialogue/Soldier/Soldier3.dialogue", "res://dialogue/Soldier/Soldier.dialogue", "res://dialogue/Soldier/Soldier2.dialogue", "res://dialogue/Soldier4.dialogue", "res://dialogue/Soldier5.dialogue", "res://dialogue/Soldier6.dialogue", "res://dialogue/Soldier7.dialogue", "res://dialogue/Soldier8.dialogue")

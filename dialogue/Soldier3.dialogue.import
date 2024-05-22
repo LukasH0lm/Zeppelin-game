@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://5pa00pxy1f50"
+path="res://.godot/imported/Soldier3.dialogue-87baf1e93533092e514e3d3dd9dd7dee.tres"
+
+[deps]
+
+source_file="res://dialogue/Soldier3.dialogue"
+dest_files=["res://.godot/imported/Soldier3.dialogue-87baf1e93533092e514e3d3dd9dd7dee.tres"]
+
+[params]
+
+defaults=true
