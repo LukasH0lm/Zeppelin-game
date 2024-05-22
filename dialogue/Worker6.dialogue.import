@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cn5eg8f53ane1"
+path="res://.godot/imported/Worker6.dialogue-40bac0985979c3c4805f200f35839f9a.tres"
+
+[deps]
+
+source_file="res://dialogue/Worker6.dialogue"
+dest_files=["res://.godot/imported/Worker6.dialogue-40bac0985979c3c4805f200f35839f9a.tres"]
+
+[params]
+
+defaults=true

@@ -475,7 +475,7 @@ shape = SubResource("BoxShape3D_e0mah")
 transform = Transform3D(131.237, 0, -9.15527e-05, 0, 134.319, 0, -0.000125885, 0, -83.9688, -45.8516, -102.793, 138.87)
 
 [node name="Worker7" type="CharacterBody3D" parent="WorkersNpc" groups=["npcs"]]
-transform = Transform3D(-0.949579, 0, -0.313528, 0, 1, 0, 0.313528, 0, -0.949579, -14752, 17.4157, 2670.27)
+transform = Transform3D(-0.949579, 0, -0.313528, 0, 0.748491, 0, 0.313528, 0, -0.949579, -14752, -5.41416, 2670.27)
 script = ExtResource("13_kqvng")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WorkersNpc/Worker7"]

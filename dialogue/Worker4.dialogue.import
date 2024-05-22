@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dqthx2a2v6p34"
+path="res://.godot/imported/Worker4.dialogue-0c087e928c782b3499202a8e7784c125.tres"
+
+[deps]
+
+source_file="res://dialogue/Worker4.dialogue"
+dest_files=["res://.godot/imported/Worker4.dialogue-0c087e928c782b3499202a8e7784c125.tres"]
+
+[params]
+
+defaults=true

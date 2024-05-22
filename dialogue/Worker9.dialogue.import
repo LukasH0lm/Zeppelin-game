@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://caa3i51gktdcc"
+path="res://.godot/imported/Worker9.dialogue-336c661dfcb7be0d34347729fd9ea5d0.tres"
+
+[deps]
+
+source_file="res://dialogue/Worker9.dialogue"
+dest_files=["res://.godot/imported/Worker9.dialogue-336c661dfcb7be0d34347729fd9ea5d0.tres"]
+
+[params]
+
+defaults=true

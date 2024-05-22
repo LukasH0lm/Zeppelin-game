@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://8fbhxs1aq2fp"
+path="res://.godot/imported/SittingWorker.dialogue-c8f1930aca3e7a3de395701b3e4f8d3a.tres"
+
+[deps]
+
+source_file="res://dialogue/SittingWorker.dialogue"
+dest_files=["res://.godot/imported/SittingWorker.dialogue-c8f1930aca3e7a3de395701b3e4f8d3a.tres"]
+
+[params]
+
+defaults=true
