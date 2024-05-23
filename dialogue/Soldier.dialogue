@@ -1,16 +1,16 @@
 ~ this_is_a_node_title
 
-Soldat: [[Hej|Hejsa|Hvad så?]], Jeg er en Oberst her på zeppelin basen.
-Oberst: har du fået fundet allede de billedere der ligger rundt på Basen enu?
-- ja 
-	Oberst: godt klaret, jeg viste det var den rigtige opgave for dig. 
-- nej 
-	Oberst: så må du lede videre, de billedere skal findes!. 
-- hvilke billedere?? 
-	Oberst: Jeg har mistet nogle billeder fra basen som du skal finde til mig.
-	Oberst: Billederen burde ligge rundt omkring på basen.
-	Oberst: hvis du har svært ved at finde Billederene kan du spørgere nogle af andre folk her på base 
-- Farvel => END 
-Oberst: Jeg Regner med at du har fundet dem alle inden dagen er omme.
+Soldat: [[Hej|Hejsa|Hvad så?]], jeg er en Oberst her på zeppelinbasen.
+Oberst: Har du fået fundet alle de billeder, der ligger rundt på basen, endnu?
+- Ja.
+Oberst: Godt klaret, jeg vidste, det var den rigtige opgave for dig.
+- Nej.
+Oberst: Så må du lede videre. De billeder skal findes!
+- Hvilke billeder?
+Oberst: Jeg har mistet nogle billeder fra basen, som du skal finde til mig.
+Oberst: Billederne burde ligge rundt omkring på basen.
+Oberst: Hvis du har svært ved at finde billederne, kan du spørge nogle af de andre folk her på basen.
+- Farvel => END
+Oberst: Jeg regner med, at du har fundet dem alle, inden dagen er omme.
 
 => END

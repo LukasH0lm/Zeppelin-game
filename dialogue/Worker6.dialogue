@@ -1,15 +1,15 @@
 ~ this_is_a_node_title
 
-Mekaniker: Øh hej 
-Mekaniker: jeg er ikke igang med noget underligt.
-- det ser ellers lidt underligt ud, det du har gang i.
-	Mekaniker: nej deeet det er meget normalt det jeg har gang i.
-	Mekaniker: jeg ved ikke hvad du snakker om 
-	Mekaniker: jeg tror det er dig der er igang med noget underligt noget.
-- Jeg leder efter nogle billedere har du set dem?
-	Mekaniker: jeg har ikke taget billedere af nogen jeg ved ikke hvad du snakker om
-	Mekaniker: gå væk!
+Mekaniker: Øh, hej.
+Mekaniker: Jeg er ikke i gang med noget underligt.
+- Det ser ellers lidt underligt ud, det du har gang i.
+Mekaniker: Nej, deeet... det er meget normalt, det jeg har gang i.
+Mekaniker: Jeg ved ikke, hvad du snakker om.
+Mekaniker: Jeg tror, det er dig, der er i gang med noget underligt.
+- Jeg leder efter nogle billeder. Har du set dem?
+Mekaniker: Jeg har ikke taget billeder af nogen, jeg ved ikke, hvad du snakker om.
+Mekaniker: Gå væk!
 - Farvel => END
-Mekaniker: ikk snak til mig igen!
+Mekaniker: Ikk' snak til mig igen!
 
 => END

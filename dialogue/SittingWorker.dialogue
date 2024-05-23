@@ -1,13 +1,13 @@
 ~ this_is_a_node_title
 
-Mekaniker: Hva så find dig en stol og tag dig en øl
-- i sidder måske bare og hygger
-	Mekaniker: ja det kan man da godt sige, officerenede på basen er alle tysker og taler kun tysk
-	Mekaniker: og jeg kan kun dansk
-	Mekaniker: men hvis der er noget man kan blive enige om så er det at drikke en øl i pausen.
+Mekaniker: Hva' så? Find dig en stol og tag dig en øl.
+- I sidder måske bare og hygger?
+Mekaniker: Ja, det kan man da godt sige. Officererne på basen er alle tyskere og taler kun tysk.
+Mekaniker: Og jeg kan kun dansk.
+Mekaniker: Men hvis der er noget, man kan blive enige om, så er det at drikke en øl i pausen.
 - Har du set nogle billeder liggende her omkring?
-	Mekaniker: nej det har jeg desværre ikke men prøv at tjekke inde ved Tobias,Toska eller Toni.
+Mekaniker: Nej, det har jeg desværre ikke. Men prøv at tjekke inde ved Tobias, Toska eller Toni.
 - Farvel => END
-Nathan: Du må hygge dig
+Nathan: Du må hygge dig.
 
 => END

@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://dvbgf6drv86br"]
+[gd_scene load_steps=70 format=3 uid="uid://dvbgf6drv86br"]
 
 [ext_resource type="PackedScene" uid="uid://cwiu8nsyij4gn" path="res://data/player/player.tscn" id="1_tnv5a"]
 [ext_resource type="Script" path="res://data/scripts/world.gd" id="1_x87ln"]
@@ -58,6 +58,7 @@
 [ext_resource type="PackedScene" uid="uid://d0wto510w6rpd" path="res://assets/models/hose/garden_hose__faucet_free.glb" id="52_jijwc"]
 [ext_resource type="PackedScene" uid="uid://b360uodfdtoxq" path="res://assets/models/firehouse/old_fire_hose_box.glb" id="53_d2l7u"]
 [ext_resource type="PackedScene" uid="uid://ime1m2wv0wca" path="res://assets/models/barrel2/old_rusted_metal_barrel.glb" id="54_5kgk6"]
+[ext_resource type="PackedScene" uid="uid://cufih2gnravwn" path="res://data/models/L 45/L 45.dae" id="59_dh6kn"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_6bxyf"]
 panorama = ExtResource("3_5hgqm")
@@ -141,7 +142,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7175, 27.8794, -24.3458)
 
 [node name="Toska" parent="." instance=ExtResource("4_japnf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5778, 11.0304, -47.3501)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 11.03, -47.35)
 
 [node name="Floor" type="CSGBox3D" parent="Toska"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1157, -11.3975, 6.47256)
@@ -207,6 +208,45 @@ text = "L  54
 "
 font = SubResource("FontFile_kfhs5")
 
+[node name="FireHose3" parent="Toska" instance=ExtResource("53_d2l7u")]
+transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.0519003, -65.4327, -11.2272, 123.68)
+
+[node name="Rope9" parent="Toska" instance=ExtResource("47_vi85r")]
+transform = Transform3D(0.733208, -0.585553, 0, 0.425197, 1.00973, 0, 0, 0, 0.281063, -35.0779, -6.62668, 80.6606)
+
+[node name="Rope10" parent="Toska" instance=ExtResource("47_vi85r")]
+transform = Transform3D(-0.681291, 0.693232, -0.00954909, 0.503587, 0.938854, 0.00106199, 0.0250643, -0.0200168, -0.280899, -48.3299, -6.62668, 80.4984)
+
+[node name="Rope12" parent="Toska" instance=ExtResource("47_vi85r")]
+transform = Transform3D(-0.681291, 0.693232, -0.00954909, 0.503587, 0.938854, 0.00106199, 0.0250643, -0.0200168, -0.280899, -49.0406, -6.62668, -14.9932)
+
+[node name="Rope11" parent="Toska" instance=ExtResource("47_vi85r")]
+transform = Transform3D(0.733208, -0.585553, 0, 0.425197, 1.00973, 0, 0, 0, 0.281063, -35.0779, -6.62668, -14.7671)
+
+[node name="polaroid4" parent="Toska" groups=["polaroids"] instance=ExtResource("24_8j60x")]
+transform = Transform3D(0.0613794, 0, 0.998115, 0, 1, 0, -0.998115, 0, 0.0613794, -32.4901, -10.4072, -14.9663)
+
+[node name="TrainTracksToska" type="Node3D" parent="Toska"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 294.496, -11.1734, 27.6121)
+
+[node name="Tr_Sec_1" parent="Toska/TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, 45)
+
+[node name="Tr_Sec_2" parent="Toska/TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -63.698)
+
+[node name="Tr_Sec_3" parent="Toska/TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -173)
+
+[node name="Tr_Sec_4" parent="Toska/TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -278.881)
+
+[node name="Tr_Sec_5" parent="Toska/TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -387.579)
+
+[node name="Tr_Sec_6" parent="Toska/TrainTracksToska" instance=ExtResource("11_8rntj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -496.881)
+
 [node name="TrainTracksTobiasToni" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -310.659, -0.142548, -19.7381)
 
@@ -226,27 +266,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -278.881)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -387.579)
 
 [node name="Tr_Sec_6" parent="TrainTracksTobiasToni" instance=ExtResource("11_8rntj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -496.881)
-
-[node name="TrainTracksToska" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 323.074, -0.143, -19.738)
-
-[node name="Tr_Sec_1" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, 45)
-
-[node name="Tr_Sec_2" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -63.698)
-
-[node name="Tr_Sec_3" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186, 0.342828, -173)
-
-[node name="Tr_Sec_4" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -278.881)
-
-[node name="Tr_Sec_5" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -387.579)
-
-[node name="Tr_Sec_6" parent="TrainTracksToska" instance=ExtResource("11_8rntj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.008, 0.365336, -496.881)
 
 [node name="Terrain3D" type="Terrain3D" parent="."]
@@ -695,9 +714,6 @@ transform = Transform3D(-0.0480249, 0.673038, 0.738047, 0.0437024, 0.739608, -0.
 [node name="polaroid3" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
 transform = Transform3D(-0.00518645, -0.853342, -0.521326, -0.00848911, 0.521352, -0.853299, 0.999951, 3.38862e-10, -0.00994808, -701.397, 0.2435, 17.7258)
 
-[node name="polaroid4" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
-transform = Transform3D(0.0613794, 0, 0.998115, 0, 1, 0, -0.998115, 0, 0.0613794, -3.9123, 0.623212, -62.3164)
-
 [node name="polaroid5" parent="Polaroids" groups=["polaroids"] instance=ExtResource("24_8j60x")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -458.491, 0.2, 96.632)
 
@@ -783,16 +799,16 @@ transform = Transform3D(0.00723817, 0, 0, 0, 0.0069921, 0, 0, 0, 0.00803742, -55
 transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -441.64, 0.298361, 66.597)
 
 [node name="Concret9" parent="." instance=ExtResource("43_vgq4r")]
-transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -4.0519, 0.298361, 33.1889)
+transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -132.434, 0.298, 33.189)
 
 [node name="Concret12" parent="." instance=ExtResource("43_vgq4r")]
-transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -22.8542, 0.298361, 33.1889)
+transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -151.538, 0.298, 33.189)
 
 [node name="Concret10" parent="." instance=ExtResource("43_vgq4r")]
-transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -4.0519, 0.298361, -62.3235)
+transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -132.502, 0.298, -62.324)
 
 [node name="Concret11" parent="." instance=ExtResource("43_vgq4r")]
-transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -23.6065, 0.298361, -62.3235)
+transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -152.428, 0.298, -62.324)
 
 [node name="Concret2" parent="." instance=ExtResource("43_vgq4r")]
 transform = Transform3D(1, 0, 0, 0, 0.435185, 0, 0, 0, 0.409789, -438.685, 0.298361, -36.2029)
@@ -872,12 +888,6 @@ transform = Transform3D(0.446947, 0, 0.89456, -0.304211, 0.940401, 0.151992, -0.
 [node name="Rope" parent="." instance=ExtResource("47_vi85r")]
 transform = Transform3D(0.733208, -0.585553, 0, 0.425197, 1.00973, 0, 0, 0, 0.281063, -444.109, 4.40372, 66.5836)
 
-[node name="Rope9" parent="." instance=ExtResource("47_vi85r")]
-transform = Transform3D(0.733208, -0.585553, 0, 0.425197, 1.00973, 0, 0, 0, 0.281063, -6.50011, 4.40372, 33.3105)
-
-[node name="Rope11" parent="." instance=ExtResource("47_vi85r")]
-transform = Transform3D(0.733208, -0.585553, 0, 0.425197, 1.00973, 0, 0, 0, 0.281063, -6.50011, 4.40372, -62.1172)
-
 [node name="Rope2" parent="." instance=ExtResource("47_vi85r")]
 transform = Transform3D(0.733208, -0.585553, 0, 0.425197, 1.00973, 0, 0, 0, 0.281063, -440.99, 4.40372, -36.1056)
 
@@ -886,12 +896,6 @@ transform = Transform3D(-0.732779, 0.585211, -0.00960796, 0.425197, 1.00973, 0, 
 
 [node name="Rope4" parent="." instance=ExtResource("47_vi85r")]
 transform = Transform3D(-0.681291, 0.693232, -0.00954909, 0.503587, 0.938854, 0.00106199, 0.0250643, -0.0200168, -0.280899, -461.706, 4.40372, 59.3197)
-
-[node name="Rope10" parent="." instance=ExtResource("47_vi85r")]
-transform = Transform3D(-0.681291, 0.693232, -0.00954909, 0.503587, 0.938854, 0.00106199, 0.0250643, -0.0200168, -0.280899, -19.7521, 4.40372, 33.1483)
-
-[node name="Rope12" parent="." instance=ExtResource("47_vi85r")]
-transform = Transform3D(-0.681291, 0.693232, -0.00954909, 0.503587, 0.938854, 0.00106199, 0.0250643, -0.0200168, -0.280899, -20.4628, 4.40372, -62.3433)
 
 [node name="Rope5" parent="." instance=ExtResource("47_vi85r")]
 transform = Transform3D(-0.681291, 0.693232, -0.00954909, 0.503587, 0.938854, 0.00106199, 0.0250643, -0.0200168, -0.280899, -550.695, 4.40372, 34.7215)
@@ -971,9 +975,6 @@ transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.
 [node name="FireHose2" parent="." instance=ExtResource("53_d2l7u")]
 transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.0519003, -472.546, -0.196777, 76.33)
 
-[node name="FireHose3" parent="." instance=ExtResource("53_d2l7u")]
-transform = Transform3D(0.0256497, 0, -0.998652, 0, 0.561479, 0, 0.493546, 0, 0.0519003, -36.8549, -0.196777, 76.33)
-
 [node name="Barrel" parent="." instance=ExtResource("54_5kgk6")]
 transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -533.108, 0.00159204, -98.5705)
 
@@ -1000,6 +1001,19 @@ transform = Transform3D(0.330057, 0, 0, 0, 0.243007, 0, 0, 0, 0.29086, -578.447,
 
 [node name="Barrel9" parent="." instance=ExtResource("54_5kgk6")]
 transform = Transform3D(0.330057, 0, 0, 0, 0.0519296, -0.284141, 0, 0.237394, 0.0621554, -578.035, 0.290499, -66.2553)
+
+[node name="L 45" parent="." instance=ExtResource("59_dh6kn")]
+transform = Transform3D(-0.0401667, 0, 0.999193, 0, 1, 0, -0.999193, 0, -0.0401667, -486.018, 158.183, 360.602)
+
+[node name="Label3D" type="Label3D" parent="L 45"]
+transform = Transform3D(-2.98023e-07, 0, 5, 0, 5, 0, -5, 0, -2.98023e-07, 10.9579, 15.3617, 13.6567)
+pixel_size = 0.1
+text = "L  45
+
+
+
+"
+font = SubResource("FontFile_kfhs5")
 
 [connection signal="book_clicked" from="player" to="PhotoBook" method="unlockphoto"]
 [connection signal="flip_left" from="player" to="PhotoBook" method="flip_page_left"]

@@ -1,12 +1,12 @@
 ~ this_is_a_node_title
 
-Officer: Hallo
-Officer: Wir werden heute gehen 
-- hvad laver du?
-	Officer: Ich werde zu l17 für fail gehen.
-- Har du set et billede liggened her omkring
-	Officer: Ich werde mich hinlegen und dich am Ende des Tages sehen
+Officer: Hallo.
+Officer: Wir werden heute gehen.
+- Hvad laver du?
+Officer: Ich werde zu L17 für eine Mission gehen.
+- Har du set et billede liggende her omkring?
+Officer: Ich werde mich hinlegen und dich am Ende des Tages sehen.
 - Farvel => END
-Officer: Auf Wiedersehen
+Officer: Auf Wiedersehen.
 
 => END

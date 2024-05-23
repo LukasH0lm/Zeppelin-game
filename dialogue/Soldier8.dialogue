@@ -1,9 +1,9 @@
 ~ this_is_a_node_title
 
-Officer: Hallo
-- Hvad er det du laver?
-	Officer: Ich bin gerade dabei, unsere neue Lebensmittellieferung zu inspizieren, um zu sehen, ob alles so ist, wie es sein sollte
-- Jeg leder efter nogle billeder der skulle være blevet væk, har du set dem?
-	Officer: Nein, da kann ich leider nicht helfen
+Officer: Hallo.
+- Hvad er det, du laver?
+Officer: Ich bin gerade dabei, unsere neue Lebensmittellieferung zu inspizieren, um zu sehen, ob alles so ist, wie es sein sollte.
+- Jeg leder efter nogle billeder, der skulle være blevet væk. Har du set dem?
+Officer: Nein, da kann ich leider nicht helfen.
 - Farvel => END
 => END

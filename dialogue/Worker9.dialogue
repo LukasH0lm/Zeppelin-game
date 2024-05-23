@@ -1,10 +1,10 @@
 ~ this_is_a_node_title
 
-Mekaniker: hey har du set min skruetrækker et sted, jeg mangler den lidt meget lige nu.
-- Nej jeg har ikke lige set en skrutrækker.
-	Mekaniker: Sådan noget Lort, jeg er sikker på at en af officerened har stjålen den.
-- Har du set nogle billeder? jeg er på jagt efter dem.
-	Mekaniker: Nej jeg har sku ikke set nogle billeder
-	Mekaniker: men hvis du finder min skruetrækker skal jeg nok finde dine billereder.
-- Farvel du => END
+Mekaniker: Hey, har du set min skruetrækker et sted? Jeg mangler den lidt meget lige nu.
+- Nej, jeg har ikke lige set en skruetrækker.
+Mekaniker: Sådan noget lort, jeg er sikker på, at en af officererne har stjålet den.
+- Har du set nogle billeder? Jeg er på jagt efter dem.
+Mekaniker: Nej, jeg har sgu ikke set nogle billeder.
+Mekaniker: Men hvis du finder min skruetrækker, skal jeg nok finde dine billeder.
+- Farvel, du => END
 => END
