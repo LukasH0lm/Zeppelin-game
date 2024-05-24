@@ -3,10 +3,10 @@
 Mekaniker: Hej, du.
 Mekaniker: Mangler du noget?
 - Ikke rigtig, nej.
-Mekaniker: Så find en anden at forstyrre, så!
+	Mekaniker: Så find en anden at forstyrre, så!
 - Obersten har sat mig til at finde hans billeder. Har du set dem?
-Mekaniker: Ja, jeg syntes, jeg så et henne i Toska ved et af de reb, der holder L54 nede.
+	Mekaniker: Ja, jeg syntes, jeg så et henne i Toska ved et af de reb, der holder L54 nede.
 - Farvel => END
-Mekaniker: Ja, mojn mojn, du.
+	Mekaniker: Ja, mojn mojn, du.
 
 => END

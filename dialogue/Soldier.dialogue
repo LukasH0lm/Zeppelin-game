@@ -3,13 +3,13 @@
 Soldat: [[Hej|Hejsa|Hvad så?]], jeg er en Oberst her på zeppelinbasen.
 Oberst: Har du fået fundet alle de billeder, der ligger rundt på basen, endnu?
 - Ja.
-Oberst: Godt klaret, jeg vidste, det var den rigtige opgave for dig.
+	Oberst: Godt klaret, jeg vidste, det var den rigtige opgave for dig.
 - Nej.
-Oberst: Så må du lede videre. De billeder skal findes!
+	Oberst: Så må du lede videre. De billeder skal findes!
 - Hvilke billeder?
-Oberst: Jeg har mistet nogle billeder fra basen, som du skal finde til mig.
-Oberst: Billederne burde ligge rundt omkring på basen.
-Oberst: Hvis du har svært ved at finde billederne, kan du spørge nogle af de andre folk her på basen.
+	Oberst: Jeg har mistet nogle billeder fra basen, som du skal finde til mig.
+	Oberst: Billederne burde ligge rundt omkring på basen.
+	Oberst: Hvis du har svært ved at finde billederne, kan du spørge nogle af de andre folk her på basen.
 - Farvel => END
 Oberst: Jeg regner med, at du har fundet dem alle, inden dagen er omme.
 

@@ -2,10 +2,10 @@
 
 Soldat: Hva' så, du?
 - Hvad laver du?
-Soldat: Min post er at holde øje med, at der ikke kommer nogen og piller ved vores nye Albatros D III flyvemaskiner.
+	Soldat: Min post er at holde øje med, at der ikke kommer nogen og piller ved vores nye Albatros D III flyvemaskiner.
 - Der burde ligge et billede her et sted. Har du set det?
-Soldat: Ja, der ligger et ved en af vores Albatros D III.
+	Soldat: Ja, der ligger et ved en af vores Albatros D III.
 - Farvel => END
-Nathan: Vi ses, du.
+	Soldat: Vi ses, du.
 
 => END

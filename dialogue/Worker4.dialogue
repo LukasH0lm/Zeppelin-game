@@ -3,10 +3,10 @@
 Mekaniker: Hva' så, det er dig, den nye, ikke?
 Mekaniker: Håber du har en god første dag her på zeppelinbasen.
 - Hvad har I gang i?
-Mekaniker: Vi er lige i gang med at se på, hvilke små justeringer L17 mangler, før vi kan flyve afsted med den igen.
-Mekaniker: Men vi mangler lidt små dele, så vi bliver nok nødt til at sende en ind til Tønder for at få lidt reservedele.
+	Mekaniker: Vi er lige i gang med at se på, hvilke små justeringer L17 mangler, før vi kan flyve afsted med den igen.
+	Mekaniker: Men vi mangler lidt små dele, så vi bliver nok nødt til at sende en ind til Tønder for at få lidt reservedele.
 - Jeg har hørt, at der burde ligge et billede her i hallen. Har du set det?
-Mekaniker: Ja, jeg syntes, jeg så et liggende nede i enden af L17.
+	Mekaniker: Ja, jeg syntes, jeg så et liggende nede i enden af L17.
 - Farvel => END
 
 => END

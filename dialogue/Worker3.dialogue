@@ -2,10 +2,10 @@
 
 Mekaniker: Pas lige på, mester. Ham piloten bliver skide sur, hvis han finder en fedtfinger på maskinerne.
 - Hvad er du i gang med at fikse på flyveren?
-Mekaniker: Jeg er lige ved at kalibrere dens her propel. Vores pilot vil gerne have den i luften snart.
+	Mekaniker: Jeg er lige ved at kalibrere dens her propel. Vores pilot vil gerne have den i luften snart.
 - Jeg leder efter nogle billeder. Har du set dem?
-Mekaniker: Ja, der ligger vist et billede henne ved det ene Albatros D III-hjul.
+	Mekaniker: Ja, der ligger vist et billede henne ved det ene Albatros D III-hjul.
 - Farvel => END
-Mekaniker: Ja, mojn.
+	Mekaniker: Ja, mojn.
 
 => END

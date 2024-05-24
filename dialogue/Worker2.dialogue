@@ -2,10 +2,10 @@
 
 Mekaniker: Hva' så, kammerat?
 - Du ligger rigtig og hygger dig, hva'?
-Mekaniker: Ja, jeg så Obersten gå hen mod Tobias.
-Mekaniker: Så tænkte jeg, at jeg lige ville slikke lidt sol, mens han kigger væk.
+	Mekaniker: Ja, jeg så Obersten gå hen mod Tobias.
+	Mekaniker: Så tænkte jeg, at jeg lige ville slikke lidt sol, mens han kigger væk.
 - Jeg er på jagt efter nogle billeder til Obersten. Har du set nogle af dem?
-Mekaniker: Ja, jeg så et billede ligge inde i Toni, nede bag L17, ved nogle dæk.
-Mekaniker: Ellers har jeg ikke set nogen. Held og lykke med at finde dem.
+	Mekaniker: Ja, jeg så et billede ligge inde i Toni, nede bag L17, ved nogle dæk.
+	Mekaniker: Ellers har jeg ikke set nogen. Held og lykke med at finde dem.
 - Farvel => END
 => END

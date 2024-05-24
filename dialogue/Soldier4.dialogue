@@ -2,11 +2,11 @@
 
 Soldat: Shhhh, er Obersten i nærheden?
 - Nej, han står henne ved Tobias-hallen.
-Soldat: Okay, godt. Han må helst ikke finde mig.
-Soldat: Han er rimelig sur på mig lige nu, og hvis han finder mig, kommer jeg til at skulle gøre latriner rene, indtil den her dumme krig er over.
-Soldat: Og det er alt sammen fordi, jeg kom til at åbne hans billedebog, mens det blæste, så alle hans billeder fløj ud af bogen og rundt på basen.
+	Soldat: Okay, godt. Han må helst ikke finde mig.
+	Soldat: Han er rimelig sur på mig lige nu, og hvis han finder mig, kommer jeg til at skulle gøre latriner rene, indtil den her dumme krig er over.
+	Soldat: Og det er alt sammen fordi, jeg kom til at åbne hans billedebog, mens det blæste, så alle hans billeder fløj ud af bogen og rundt på basen.
 - Har du set nogle billeder liggende rundt på basen?
-Soldat: Nej, har ikke set dem, men håber du snart finder dem.
+	Soldat: Nej, har ikke set dem, men håber du snart finder dem.
 - Farvel => END
 
 => END
